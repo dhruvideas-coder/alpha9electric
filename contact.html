@@ -150,6 +150,7 @@
           <p class="text-gray-500 text-sm mb-8">Fill in the form below and we'll get back to you with a personalized response and free estimate.</p>
 
           <form id="contact-form" novalidate>
+
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               <div>
                 <label for="name" class="block text-sm font-semibold text-gray-700 mb-2">Full Name <span class="text-red-500">*</span></label>
@@ -176,12 +177,10 @@
                   <option>Residential Wiring</option>
                   <option>Commercial Electrical</option>
                   <option>Industrial Installation</option>
-                  <option>Transformers / Products</option>
-                  <option>Control Panels</option>
-                  <option>CCTV & Security</option>
                   <option>Maintenance & Repairs</option>
+                  <option>CCTV & Security</option>
+                  <option>Lighting Solutions</option>
                   <option>Emergency Service</option>
-                  <option>Custom Engineering</option>
                   <option>Other</option>
                 </select>
               </div>
@@ -198,10 +197,15 @@
               <label for="agree" class="text-sm text-gray-600 cursor-pointer">I agree that Alpha9Electric may contact me regarding my inquiry. I understand my information will be treated with respect and confidentiality.</label>
             </div>
 
-            <button type="submit" class="btn-primary w-full justify-center text-base py-4">
+            <button type="submit" id="submit-btn" class="btn-primary w-full justify-center text-base py-4">
               <i data-lucide="send" class="w-5 h-5"></i>
               Send Message & Get Free Quote
             </button>
+
+            <!-- Error Banner -->
+            <div id="form-error" class="hidden mt-4 p-4 bg-red-50 border border-red-200 rounded-xl text-red-700 text-sm text-center">
+              Something went wrong. Please try again or call us at <a href="tel:8652900218" class="font-semibold underline">(865) 290-0218</a>.
+            </div>
           </form>
 
           <!-- Success Message -->
@@ -239,42 +243,83 @@
       <h2 class="section-title fade-up stagger-1">Frequently Asked Questions</h2>
       <div class="accent-divider center fade-up stagger-2"></div>
     </div>
-    <div class="space-y-5">
+    <div class="space-y-4">
+
       <details class="card p-6 group cursor-pointer fade-up stagger-1">
         <summary class="flex items-center justify-between font-bold text-primary text-lg list-none">
-          Do you offer free estimates?
-          <i data-lucide="chevron-down" class="w-5 h-5 text-accent group-open:rotate-180 transition-transform flex-shrink-0"></i>
+          Why are my lights flickering?
+          <i data-lucide="chevron-down" class="w-5 h-5 text-accent group-open:rotate-180 transition-transform flex-shrink-0 ml-4"></i>
         </summary>
-        <p class="text-gray-600 mt-4 text-sm leading-relaxed">Yes! Alpha9Electric provides free estimates for all projects. Simply contact us by phone or through our contact form and we'll schedule a consultation at your convenience.</p>
+        <p class="text-gray-600 mt-4 text-sm leading-relaxed">Flickering lights are usually a sign of an electrical overload or a loose connection somewhere in the circuit. It may seem like a minor annoyance, but it can point to a more serious underlying issue. To stay safe, we recommend having a certified electrician inspect the problem as soon as possible.</p>
       </details>
+
       <details class="card p-6 group cursor-pointer fade-up stagger-2">
         <summary class="flex items-center justify-between font-bold text-primary text-lg list-none">
-          Are you available for emergency electrical services?
-          <i data-lucide="chevron-down" class="w-5 h-5 text-accent group-open:rotate-180 transition-transform flex-shrink-0"></i>
+          Why is my light switch hot to the touch?
+          <i data-lucide="chevron-down" class="w-5 h-5 text-accent group-open:rotate-180 transition-transform flex-shrink-0 ml-4"></i>
         </summary>
-        <p class="text-gray-600 mt-4 text-sm leading-relaxed">Absolutely. We offer 24/7 emergency electrical service. If you experience an electrical emergency, call us immediately at (865) 290-0218 and our on-call team will respond promptly.</p>
+        <p class="text-gray-600 mt-4 text-sm leading-relaxed">Every light switch is rated to handle a specific amount of electricity. If it feels hot, that's a warning sign — it could mean a faulty switch, damaged wiring, or an overloaded circuit. A hot switch is a serious safety hazard and should be inspected by a licensed electrician right away. Don't ignore it.</p>
       </details>
+
       <details class="card p-6 group cursor-pointer fade-up stagger-3">
         <summary class="flex items-center justify-between font-bold text-primary text-lg list-none">
-          Can you design custom electrical products for my specific application?
-          <i data-lucide="chevron-down" class="w-5 h-5 text-accent group-open:rotate-180 transition-transform flex-shrink-0"></i>
+          How do I know if my electrical outlet is burning?
+          <i data-lucide="chevron-down" class="w-5 h-5 text-accent group-open:rotate-180 transition-transform flex-shrink-0 ml-4"></i>
         </summary>
-        <p class="text-gray-600 mt-4 text-sm leading-relaxed">Yes — custom engineering is one of our core strengths. We design and manufacture transformers, control panels, power supplies, and switchgear to exact client specifications. Contact us with your requirements and our engineers will create a solution.</p>
+        <div class="mt-4 space-y-3 text-gray-600 text-sm leading-relaxed">
+          <p>There are a few clear warning signs: you may notice discoloration or scorch marks around the outlet, a burning smell nearby, or the outlet may feel unusually hot when you touch it. Any one of these signs means the outlet could cause electric shock or even start a fire.</p>
+          <p class="font-semibold text-primary">If you suspect your outlet is burning, stop using it and call a licensed electrician immediately.</p>
+        </div>
       </details>
+
       <details class="card p-6 group cursor-pointer fade-up stagger-4">
         <summary class="flex items-center justify-between font-bold text-primary text-lg list-none">
-          What areas do you serve?
-          <i data-lucide="chevron-down" class="w-5 h-5 text-accent group-open:rotate-180 transition-transform flex-shrink-0"></i>
+          How do I get an estimate?
+          <i data-lucide="chevron-down" class="w-5 h-5 text-accent group-open:rotate-180 transition-transform flex-shrink-0 ml-4"></i>
         </summary>
-        <p class="text-gray-600 mt-4 text-sm leading-relaxed">We are based in Kingston, TN and serve the surrounding Tennessee region including Knoxville, Nashville, Chattanooga, Memphis, and Oak Ridge. Contact us for large-scale project coverage anywhere in the region.</p>
+        <p class="text-gray-600 mt-4 text-sm leading-relaxed">We're always happy to help you plan and budget for electrical repairs or new installations. Getting an estimate is easy — just give us a call at <a href="tel:8652900218" class="text-accent font-semibold hover:underline">(865) 290-0218</a> or fill out the contact form on this page and we'll get back to you promptly.</p>
       </details>
+
       <details class="card p-6 group cursor-pointer fade-up stagger-5">
         <summary class="flex items-center justify-between font-bold text-primary text-lg list-none">
-          Are your electricians licensed and insured?
-          <i data-lucide="chevron-down" class="w-5 h-5 text-accent group-open:rotate-180 transition-transform flex-shrink-0"></i>
+          Is a permit required for the electrical work I need?
+          <i data-lucide="chevron-down" class="w-5 h-5 text-accent group-open:rotate-180 transition-transform flex-shrink-0 ml-4"></i>
         </summary>
-        <p class="text-gray-600 mt-4 text-sm leading-relaxed">Yes. All Alpha9Electric technicians are fully licensed, bonded, and insured. We hold all required state electrical licenses and carry comprehensive liability and workers' compensation insurance for your complete protection.</p>
+        <p class="text-gray-600 mt-4 text-sm leading-relaxed">Our electricians are fully up to date on all local permitting requirements and electrical codes. For more extensive work — such as rewiring or panel upgrades — permits are typically required, and we handle all of that on your behalf. When we visit for your initial consultation, we'll walk you through exactly what's needed so there are no surprises.</p>
       </details>
+
+      <details class="card p-6 group cursor-pointer fade-up stagger-6">
+        <summary class="flex items-center justify-between font-bold text-primary text-lg list-none">
+          What is a GFCI outlet?
+          <i data-lucide="chevron-down" class="w-5 h-5 text-accent group-open:rotate-180 transition-transform flex-shrink-0 ml-4"></i>
+        </summary>
+        <p class="text-gray-600 mt-4 text-sm leading-relaxed">GFCI stands for <strong>Ground Fault Circuit Interrupter</strong>. These are special safety outlets designed to protect you from electric shock when using electrical devices near water — such as in bathrooms, kitchens, or outdoors. They work by automatically cutting off power the moment they detect a dangerous surge. If your home doesn't have GFCI outlets in the required areas, we strongly recommend getting them installed.</p>
+      </details>
+
+      <details class="card p-6 group cursor-pointer fade-up stagger-1">
+        <summary class="flex items-center justify-between font-bold text-primary text-lg list-none">
+          Are you licensed, bonded, and insured?
+          <i data-lucide="chevron-down" class="w-5 h-5 text-accent group-open:rotate-180 transition-transform flex-shrink-0 ml-4"></i>
+        </summary>
+        <p class="text-gray-600 mt-4 text-sm leading-relaxed">Yes — absolutely. All of our electricians are fully licensed, bonded, and insured. We also invest in ongoing training so our team stays current on the latest industry codes, safety standards, and best practices. You can hire us with complete confidence.</p>
+      </details>
+
+      <details class="card p-6 group cursor-pointer fade-up stagger-2">
+        <summary class="flex items-center justify-between font-bold text-primary text-lg list-none">
+          What types of electrical inspections do you offer?
+          <i data-lucide="chevron-down" class="w-5 h-5 text-accent group-open:rotate-180 transition-transform flex-shrink-0 ml-4"></i>
+        </summary>
+        <p class="text-gray-600 mt-4 text-sm leading-relaxed">We offer a full range of electrical inspections — from routine service checks to final assessments on new construction. Our certified electricians can perform inspections for insurance purposes, home sales, code compliance, and much more. Whatever you need, we'll make sure everything is safe and up to standard.</p>
+      </details>
+
+      <details class="card p-6 group cursor-pointer fade-up stagger-3">
+        <summary class="flex items-center justify-between font-bold text-primary text-lg list-none">
+          Can you help me find a more energy-efficient lighting system?
+          <i data-lucide="chevron-down" class="w-5 h-5 text-accent group-open:rotate-180 transition-transform flex-shrink-0 ml-4"></i>
+        </summary>
+        <p class="text-gray-600 mt-4 text-sm leading-relaxed">Definitely. Helping homeowners and business owners switch to energy-efficient lighting is something we genuinely enjoy. During a consultation, we'll assess your current setup and recommend solutions that reduce your energy bill without sacrificing comfort or style — all within your budget.</p>
+      </details>
+
     </div>
   </div>
 </section>
@@ -285,19 +330,19 @@
     <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
       <div>
         <!-- <img src="images/logo.png" alt="Alpha9Electric Logo" class="h-12 footer-logo mb-5 object-contain" /> -->
-        <p class="text-white/60 text-sm leading-relaxed mb-6">Alpha9Electric — Power product manufacturer and system solution provider since 30+ years.</p>
+        <p class="text-white/60 text-sm leading-relaxed mb-6">Alpha9Electric — Licensed electrical contractors with 30+ years of excellence serving residential, commercial, and industrial clients across Tennessee.</p>
         <div class="flex gap-3">
           <a href="#" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white/70 hover:bg-accent hover:text-white transition-all"><i data-lucide="facebook" class="w-4 h-4"></i></a>
           <a href="#" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white/70 hover:bg-accent hover:text-white transition-all"><i data-lucide="instagram" class="w-4 h-4"></i></a>
           <a href="#" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white/70 hover:bg-accent hover:text-white transition-all"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
         </div>
       </div>
-      <div><h4 class="footer-heading">Quick Links</h4><ul class="space-y-2.5"><li><a href="index.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Home</a></li><li><a href="about.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>About Us</a></li><li><a href="products.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Products</a></li><li><a href="services.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Services</a></li><li><a href="projects.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Projects</a></li><li><a href="blog.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Blog</a></li></ul></div>
+      <div><h4 class="footer-heading">Quick Links</h4><ul class="space-y-2.5"><li><a href="index.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Home</a></li><li><a href="about.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>About Us</a></li><li><a href="services.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Services</a></li><li><a href="projects.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Projects</a></li><li><a href="blog.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Blog</a></li></ul></div>
       <div><h4 class="footer-heading">Services</h4><ul class="space-y-2.5"><li><a href="services.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Residential</a></li><li><a href="services.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Commercial</a></li><li><a href="services.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Industrial</a></li><li><a href="services.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>CCTV & Security</a></li><li><a href="services.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>24/7 Emergency</a></li></ul></div>
       <div><h4 class="footer-heading">Contact</h4><ul class="space-y-4"><li class="flex items-start gap-3 text-sm text-white/70"><i data-lucide="map-pin" class="w-4 h-4 text-accent mt-0.5"></i>937 Gallaher Rd, Kingston TN</li><li><a href="tel:8652900218" class="flex items-center gap-3 text-sm footer-link"><i data-lucide="phone" class="w-4 h-4 text-accent"></i>(865) 290-0218</a></li><li><a href="mailto:info@alph9electric.com" class="flex items-center gap-3 text-sm footer-link"><i data-lucide="mail" class="w-4 h-4 text-accent"></i>info@alph9electric.com</a></li></ul><a href="contact.html" class="btn-primary mt-6 text-sm py-2.5 px-5 inline-flex"><i data-lucide="send" class="w-4 h-4"></i> Get a Free Quote</a></div>
     </div>
     <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-white/40">
-      <p>© 2025 Alpha9Electric. All rights reserved.</p><p>Power Product Manufacturing & System Solutions</p>
+      <p>© 2025 Alpha9Electric. All rights reserved.</p><p>Licensed Electrical Services — Residential, Commercial & Industrial</p>
     </div>
   </div>
 </footer>
