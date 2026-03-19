@@ -319,15 +319,35 @@ function initContactForm() {
     }
 
     if (valid) {
-      // Simulate form submission
-      const submitBtn = form.querySelector('[type="submit"]');
-      submitBtn.textContent = 'Sending...';
-      submitBtn.disabled = true;
+      const submitBtn = form.querySelector('#submit-btn');
+      const errorBanner = form.querySelector('#form-error');
 
-      setTimeout(() => {
-        form.style.display = 'none';
-        if (successMsg) successMsg.style.display = 'flex';
-      }, 1200);
+      submitBtn.innerHTML = '<svg class="animate-spin w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z"></path></svg> Sending...';
+      submitBtn.disabled = true;
+      if (errorBanner) errorBanner.classList.add('hidden');
+
+      const formData = new FormData(form);
+
+      fetch('send-email.php', {
+        method: 'POST',
+        body: formData
+      })
+        .then(res => res.json())
+        .then(data => {
+          if (data.success) {
+            form.style.display = 'none';
+            if (successMsg) successMsg.style.display = 'flex';
+            if (typeof lucide !== 'undefined') lucide.createIcons();
+          } else {
+            throw new Error(data.message || 'Submission failed');
+          }
+        })
+        .catch(() => {
+          if (errorBanner) errorBanner.classList.remove('hidden');
+          submitBtn.innerHTML = '<i data-lucide="send" class="w-5 h-5"></i> Send Message & Get Free Quote';
+          submitBtn.disabled = false;
+          if (typeof lucide !== 'undefined') lucide.createIcons();
+        });
     }
   });
 }
