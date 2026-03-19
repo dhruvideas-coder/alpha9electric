@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services | Alpha9Electric</title>
+  <meta name="description" content="Alpha9Electric offers residential, commercial, and industrial electrical services including wiring, maintenance, CCTV, and 24/7 emergency electrical support." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: { DEFAULT: '#181f6f', dark: '#0f1550', light: '#2d3a9e' },
+            accent: { DEFAULT: '#f1620f', light: '#ff7a2e', dark: '#c44d00' }
+          },
+          fontFamily: { sans: ['Inter', 'sans-serif'], heading: ['Poppins', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+<body>
+<div id="scroll-progress"></div>
+
+<!-- TOP BAR -->
+<div class="top-bar hidden md:block">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between">
+    <div class="flex items-center gap-6">
+      <a href="tel:8652900218" class="flex items-center gap-2 hover:text-accent transition-colors"><i data-lucide="phone" class="w-3.5 h-3.5"></i>(865) 290-0218</a>
+      <a href="mailto:info@alph9electric.com" class="flex items-center gap-2 hover:text-accent transition-colors"><i data-lucide="mail" class="w-3.5 h-3.5"></i>info@alph9electric.com</a>
+    </div>
+    <span class="flex items-center gap-1.5 text-green-400 font-medium"><i data-lucide="shield-check" class="w-3.5 h-3.5"></i>100% Satisfaction Guaranteed</span>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav id="navbar" class="py-4 scrolled" style="background:white;box-shadow:0 2px 20px rgba(0,0,0,.1);">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between">
+    <a href="index.html"><img src="images/logo.png" alt="Alpha9Electric Logo" class="h-12 w-auto object-contain" style="filter:none" /></a>
+    <div class="hidden lg:flex items-center gap-8">
+      <a href="index.html" class="nav-link text-gray-800 text-sm font-medium">Home</a>
+      <a href="about.html" class="nav-link text-gray-800 text-sm font-medium">About Us</a>
+      <a href="products.html" class="nav-link text-gray-800 text-sm font-medium">Products & Solutions</a>
+      <a href="services.html" class="nav-link text-gray-800 text-sm font-medium active">Services</a>
+      <a href="service-areas.html" class="nav-link text-gray-800 text-sm font-medium">Service Areas</a>
+      <a href="projects.html" class="nav-link text-gray-800 text-sm font-medium">Projects</a>
+      <a href="blog.html" class="nav-link text-gray-800 text-sm font-medium">Blog</a>
+      <a href="contact.html" class="btn-primary text-sm py-2.5 px-5"><i data-lucide="phone" class="w-4 h-4"></i> Contact Us</a>
+    </div>
+    <button id="menu-btn" class="lg:hidden text-primary p-2"><i data-lucide="menu" class="w-6 h-6"></i></button>
+  </div>
+</nav>
+<div id="mobile-menu">
+  <button id="menu-close" class="absolute top-6 right-6 text-white"><i data-lucide="x" class="w-8 h-8"></i></button>
+  <a href="index.html" class="mobile-nav-link">Home</a>
+  <a href="about.html" class="mobile-nav-link">About Us</a>
+  <a href="products.html" class="mobile-nav-link">Products & Solutions</a>
+  <a href="services.html" class="mobile-nav-link">Services</a>
+  <a href="service-areas.html" class="mobile-nav-link">Service Areas</a>
+  <a href="projects.html" class="mobile-nav-link">Projects</a>
+  <a href="blog.html" class="mobile-nav-link">Blog</a>
+  <a href="contact.html" class="mobile-nav-link">Contact</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="max-w-7xl mx-auto px-4 text-center text-white relative z-10">
+    <!-- <nav class="flex items-center justify-center gap-2 text-sm text-white/60 mb-6">
+      <a href="index.html" class="hover:text-white transition-colors">Home</a>
+      <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+      <span class="text-white">Services</span>
+    </nav> -->
+    <span class="section-eyebrow text-orange-300 fade-up">What We Offer</span>
+    <h1 class="font-heading font-black text-4xl lg:text-6xl text-white mt-2 mb-4 fade-up stagger-1">Our Services</h1>
+    <p class="text-white/75 text-lg max-w-2xl mx-auto fade-up stagger-2">Comprehensive electrical services for homes, businesses, and industries — delivered with expertise and care.</p>
+  </div>
+</section>
+
+<!-- SERVICES OVERVIEW -->
+<section class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="text-center mb-16">
+      <span class="section-eyebrow fade-up">Full-Service Electrical Solutions</span>
+      <h2 class="section-title fade-up stagger-1">Everything Electrical Under One Roof</h2>
+      <div class="accent-divider center fade-up stagger-2"></div>
+      <p class="section-desc mx-auto mt-4 fade-up stagger-2">No matter the size of the project, we're equipped to serve both residential and commercial clients, ensuring complete peace of mind every step of the way.</p>
+    </div>
+
+    <!-- Residential -->
+    <div class="mb-20">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12">
+        <div class="fade-in">
+          <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80&auto=format&fit=crop" alt="Residential electrical services" class="rounded-2xl w-full h-80 object-cover shadow-xl" loading="lazy" />
+        </div>
+        <div>
+          <div class="flex items-center gap-3 mb-5">
+            <div class="w-12 h-12 rounded-xl bg-primary flex items-center justify-center"><i data-lucide="home" class="w-6 h-6 text-white"></i></div>
+            <div>
+              <span class="section-eyebrow block">For Homeowners</span>
+              <h2 class="font-heading font-bold text-2xl text-primary">Residential Services</h2>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div class="flex items-start gap-3 bg-gray-50 rounded-lg p-3 border border-gray-100 fade-up stagger-1">
+              <i data-lucide="check-circle" class="w-5 h-5 text-accent flex-shrink-0 mt-0.5"></i>
+              <span class="text-sm text-gray-700">New Construction Wiring</span>
+            </div>
+            <div class="flex items-start gap-3 bg-gray-50 rounded-lg p-3 border border-gray-100 fade-up stagger-2">
+              <i data-lucide="check-circle" class="w-5 h-5 text-accent flex-shrink-0 mt-0.5"></i>
+              <span class="text-sm text-gray-700">Electrical Maintenance</span>
+            </div>
+            <div class="flex items-start gap-3 bg-gray-50 rounded-lg p-3 border border-gray-100 fade-up stagger-3">
+              <i data-lucide="check-circle" class="w-5 h-5 text-accent flex-shrink-0 mt-0.5"></i>
+              <span class="text-sm text-gray-700">Lighting Installation</span>
+            </div>
+            <div class="flex items-start gap-3 bg-gray-50 rounded-lg p-3 border border-gray-100 fade-up stagger-4">
+              <i data-lucide="check-circle" class="w-5 h-5 text-accent flex-shrink-0 mt-0.5"></i>
+              <span class="text-sm text-gray-700">Wiring Upgrades & Repairs</span>
+            </div>
+            <div class="flex items-start gap-3 bg-gray-50 rounded-lg p-3 border border-gray-100 fade-up stagger-5">
+              <i data-lucide="check-circle" class="w-5 h-5 text-accent flex-shrink-0 mt-0.5"></i>
+              <span class="text-sm text-gray-700">Panel Upgrades & Rewiring</span>
+            </div>
+            <div class="flex items-start gap-3 bg-gray-50 rounded-lg p-3 border border-gray-100 fade-up stagger-6">
+              <i data-lucide="check-circle" class="w-5 h-5 text-accent flex-shrink-0 mt-0.5"></i>
+              <span class="text-sm text-gray-700">Circuit Breaker Services</span>
+            </div>
+            <div class="flex items-start gap-3 bg-gray-50 rounded-lg p-3 border border-gray-100 fade-up stagger-1">
+              <i data-lucide="check-circle" class="w-5 h-5 text-accent flex-shrink-0 mt-0.5"></i>
+              <span class="text-sm text-gray-700">Code Violation Corrections</span>
+            </div>
+            <div class="flex items-start gap-3 bg-gray-50 rounded-lg p-3 border border-gray-100 fade-up stagger-2">
+              <i data-lucide="check-circle" class="w-5 h-5 text-accent flex-shrink-0 mt-0.5"></i>
+              <span class="text-sm text-gray-700">Home Inspections</span>
+            </div>
+            <div class="flex items-start gap-3 bg-gray-50 rounded-lg p-3 border border-gray-100 fade-up stagger-3">
+              <i data-lucide="check-circle" class="w-5 h-5 text-accent flex-shrink-0 mt-0.5"></i>
+              <span class="text-sm text-gray-700">Ceiling Fan Installation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Commercial -->
+    <div class="mb-20">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="order-2 lg:order-1">
+          <div class="flex items-center gap-3 mb-5">
+            <div class="w-12 h-12 rounded-xl bg-accent flex items-center justify-center"><i data-lucide="building-2" class="w-6 h-6 text-white"></i></div>
+            <div>
+              <span class="section-eyebrow block">For Businesses</span>
+              <h2 class="font-heading font-bold text-2xl text-primary">Commercial Services</h2>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div class="flex items-start gap-3 bg-gray-50 rounded-lg p-3 border border-gray-100 fade-up stagger-1"><i data-lucide="check-circle" class="w-5 h-5 text-accent flex-shrink-0 mt-0.5"></i><span class="text-sm text-gray-700">Commercial Wiring</span></div>
+            <div class="flex items-start gap-3 bg-gray-50 rounded-lg p-3 border border-gray-100 fade-up stagger-2"><i data-lucide="check-circle" class="w-5 h-5 text-accent flex-shrink-0 mt-0.5"></i><span class="text-sm text-gray-700">Lighting Solutions</span></div>
+            <div class="flex items-start gap-3 bg-gray-50 rounded-lg p-3 border border-gray-100 fade-up stagger-3"><i data-lucide="check-circle" class="w-5 h-5 text-accent flex-shrink-0 mt-0.5"></i><span class="text-sm text-gray-700">Surge Protection</span></div>
+            <div class="flex items-start gap-3 bg-gray-50 rounded-lg p-3 border border-gray-100 fade-up stagger-4"><i data-lucide="check-circle" class="w-5 h-5 text-accent flex-shrink-0 mt-0.5"></i><span class="text-sm text-gray-700">Generator Installation</span></div>
+            <div class="flex items-start gap-3 bg-gray-50 rounded-lg p-3 border border-gray-100 fade-up stagger-5"><i data-lucide="check-circle" class="w-5 h-5 text-accent flex-shrink-0 mt-0.5"></i><span class="text-sm text-gray-700">Cable/Phone Line Install</span></div>
+            <div class="flex items-start gap-3 bg-gray-50 rounded-lg p-3 border border-gray-100 fade-up stagger-6"><i data-lucide="check-circle" class="w-5 h-5 text-accent flex-shrink-0 mt-0.5"></i><span class="text-sm text-gray-700">AC System Wiring</span></div>
+          </div>
+        </div>
+        <div class="order-1 lg:order-2 fade-in">
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80&auto=format&fit=crop" alt="Commercial electrical services" class="rounded-2xl w-full h-80 object-cover shadow-xl" loading="lazy" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Industrial + CCTV & Security -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="card p-8 fade-up stagger-1">
+        <div class="flex items-center gap-3 mb-5">
+          <div class="w-12 h-12 rounded-xl bg-primary flex items-center justify-center"><i data-lucide="factory" class="w-6 h-6 text-white"></i></div>
+          <h3 class="font-heading font-bold text-xl text-primary">Industrial Services</h3>
+        </div>
+        <ul class="space-y-3">
+          <li class="flex items-center gap-3 text-sm text-gray-700"><i data-lucide="check-circle" class="w-4 h-4 text-accent flex-shrink-0"></i>Industrial Wiring & Controls</li>
+          <li class="flex items-center gap-3 text-sm text-gray-700"><i data-lucide="check-circle" class="w-4 h-4 text-accent flex-shrink-0"></i>Motor Control Centers (MCC)</li>
+          <li class="flex items-center gap-3 text-sm text-gray-700"><i data-lucide="check-circle" class="w-4 h-4 text-accent flex-shrink-0"></i>PLC & Automation Systems</li>
+          <li class="flex items-center gap-3 text-sm text-gray-700"><i data-lucide="check-circle" class="w-4 h-4 text-accent flex-shrink-0"></i>High-Voltage Installations</li>
+          <li class="flex items-center gap-3 text-sm text-gray-700"><i data-lucide="check-circle" class="w-4 h-4 text-accent flex-shrink-0"></i>Electrical Retrofitting</li>
+        </ul>
+      </div>
+      <div class="card p-8 fade-up stagger-2">
+        <div class="flex items-center gap-3 mb-5">
+          <div class="w-12 h-12 rounded-xl bg-accent flex items-center justify-center"><i data-lucide="camera" class="w-6 h-6 text-white"></i></div>
+          <h3 class="font-heading font-bold text-xl text-primary">CCTV & Security Systems</h3>
+        </div>
+        <ul class="space-y-3">
+          <li class="flex items-center gap-3 text-sm text-gray-700"><i data-lucide="check-circle" class="w-4 h-4 text-accent flex-shrink-0"></i>CCTV Camera Installation</li>
+          <li class="flex items-center gap-3 text-sm text-gray-700"><i data-lucide="check-circle" class="w-4 h-4 text-accent flex-shrink-0"></i>Access Control Systems</li>
+          <li class="flex items-center gap-3 text-sm text-gray-700"><i data-lucide="check-circle" class="w-4 h-4 text-accent flex-shrink-0"></i>Alarm System Integration</li>
+          <li class="flex items-center gap-3 text-sm text-gray-700"><i data-lucide="check-circle" class="w-4 h-4 text-accent flex-shrink-0"></i>Network Cabling</li>
+          <li class="flex items-center gap-3 text-sm text-gray-700"><i data-lucide="check-circle" class="w-4 h-4 text-accent flex-shrink-0"></i>Remote Monitoring Setup</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 24/7 EMERGENCY -->
+<section class="orange-banner py-20 text-white">
+  <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+    <div class="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center mx-auto mb-5">
+      <i data-lucide="clock" class="w-8 h-8 text-white"></i>
+    </div>
+    <h2 class="font-heading font-black text-4xl mb-5 fade-up">24/7 Emergency Electrical Service</h2>
+    <p class="text-white/85 text-lg mb-8 max-w-2xl mx-auto fade-up stagger-1">Electrical emergencies can happen anytime. Our licensed technicians are available around the clock to respond fast and restore safety to your home or business.</p>
+    <a href="tel:8652900218" class="inline-flex items-center gap-2 bg-white text-accent font-bold px-8 py-4 rounded-full hover:-translate-y-1 transition-all shadow-lg text-lg fade-up stagger-2">
+      <i data-lucide="phone" class="w-5 h-5"></i> Call (865) 290-0218 Now
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer pt-16 pb-8">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+      <div>
+        <!-- <img src="images/logo.png" alt="Alpha9Electric Logo" class="h-12 footer-logo mb-5 object-contain" /> -->
+         <p class="text-white/60 text-sm leading-relaxed">
+          Alpha9Electric — Your trusted power product manufacturer.</p>
+        </div>
+      <div><h4 class="footer-heading">Quick Links</h4><ul class="space-y-2.5"><li><a href="index.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Home</a></li><li><a href="about.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>About Us</a></li><li><a href="products.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Products</a></li><li><a href="projects.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Projects</a></li><li><a href="contact.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Contact</a></li></ul></div>
+      <div><h4 class="footer-heading">Services</h4><ul class="space-y-2.5"><li><a href="services.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Residential</a></li><li><a href="services.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Commercial</a></li><li><a href="services.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Industrial</a></li><li><a href="services.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>CCTV & Security</a></li><li><a href="services.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>24/7 Emergency</a></li></ul></div>
+      <div><h4 class="footer-heading">Contact</h4><ul class="space-y-4"><li class="flex items-start gap-3 text-sm text-white/70"><i data-lucide="map-pin" class="w-4 h-4 text-accent mt-0.5"></i>937 Gallaher Rd, Kingston TN</li><li><a href="tel:8652900218" class="flex items-center gap-3 text-sm footer-link"><i data-lucide="phone" class="w-4 h-4 text-accent"></i>(865) 290-0218</a></li><li><a href="mailto:info@alph9electric.com" class="flex items-center gap-3 text-sm footer-link"><i data-lucide="mail" class="w-4 h-4 text-accent"></i>info@alph9electric.com</a></li></ul></div>
+    </div>
+    <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-white/40">
+      <p>© 2025 Alpha9Electric. All rights reserved.</p><p>Power Product Manufacturing & System Solutions</p>
+    </div>
+  </div>
+</footer>
+<button id="back-to-top"><i data-lucide="chevron-up" class="w-5 h-5"></i></button>
+<script>lucide.createIcons();</script>
+<script src="script.js"></script>
+</body>
+</html>

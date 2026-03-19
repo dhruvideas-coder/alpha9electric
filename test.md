@@ -1,1 +1,0 @@
-echo "# alpha9electric"

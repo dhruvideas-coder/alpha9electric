@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog | Alpha9Electric</title>
+  <meta name="description" content="Insights, tips, and industry news from Alpha9Electric — your trusted electrical solutions provider." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: { DEFAULT: '#181f6f', dark: '#0f1550', light: '#2d3a9e' },
+            accent: { DEFAULT: '#f1620f', light: '#ff7a2e', dark: '#c44d00' }
+          },
+          fontFamily: { sans: ['Inter', 'sans-serif'], heading: ['Poppins', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+<body>
+<div id="scroll-progress"></div>
+
+<!-- TOP BAR -->
+<div class="top-bar hidden md:block">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between">
+    <div class="flex items-center gap-6">
+      <a href="tel:8652900218" class="flex items-center gap-2 hover:text-accent transition-colors"><i data-lucide="phone" class="w-3.5 h-3.5"></i>(865) 290-0218</a>
+      <a href="mailto:info@alph9electric.com" class="flex items-center gap-2 hover:text-accent transition-colors"><i data-lucide="mail" class="w-3.5 h-3.5"></i>info@alph9electric.com</a>
+    </div>
+    <span class="flex items-center gap-1.5 text-green-400 font-medium"><i data-lucide="shield-check" class="w-3.5 h-3.5"></i>100% Satisfaction Guaranteed</span>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav id="navbar" class="py-4 scrolled" style="background:white;box-shadow:0 2px 20px rgba(0,0,0,.1);">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between">
+    <a href="index.html"><img src="images/logo.png" alt="Alpha9Electric Logo" class="h-12 w-auto object-contain" style="filter:none" /></a>
+    <div class="hidden lg:flex items-center gap-8">
+      <a href="index.html" class="nav-link text-gray-800 text-sm font-medium">Home</a>
+      <a href="about.html" class="nav-link text-gray-800 text-sm font-medium">About Us</a>
+      <a href="products.html" class="nav-link text-gray-800 text-sm font-medium">Products & Solutions</a>
+      <a href="services.html" class="nav-link text-gray-800 text-sm font-medium">Services</a>
+      <a href="service-areas.html" class="nav-link text-gray-800 text-sm font-medium">Service Areas</a>
+      <a href="projects.html" class="nav-link text-gray-800 text-sm font-medium">Projects</a>
+      <a href="blog.html" class="nav-link text-gray-800 text-sm font-medium active">Blog</a>
+      <a href="contact.html" class="btn-primary text-sm py-2.5 px-5"><i data-lucide="phone" class="w-4 h-4"></i> Contact Us</a>
+    </div>
+    <button id="menu-btn" class="lg:hidden text-primary p-2"><i data-lucide="menu" class="w-6 h-6"></i></button>
+  </div>
+</nav>
+<div id="mobile-menu">
+  <button id="menu-close" class="absolute top-6 right-6 text-white"><i data-lucide="x" class="w-8 h-8"></i></button>
+  <a href="index.html" class="mobile-nav-link">Home</a>
+  <a href="about.html" class="mobile-nav-link">About Us</a>
+  <a href="products.html" class="mobile-nav-link">Products & Solutions</a>
+  <a href="services.html" class="mobile-nav-link">Services</a>
+  <a href="service-areas.html" class="mobile-nav-link">Service Areas</a>
+  <a href="projects.html" class="mobile-nav-link">Projects</a>
+  <a href="blog.html" class="mobile-nav-link">Blog</a>
+  <a href="contact.html" class="mobile-nav-link">Contact</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="max-w-7xl mx-auto px-4 text-center text-white relative z-10">
+    <!-- <nav class="flex items-center justify-center gap-2 text-sm text-white/60 mb-6">
+      <a href="index.html" class="hover:text-white transition-colors">Home</a>
+      <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+      <span class="text-white">Blog</span>
+    </nav> -->
+    <span class="section-eyebrow text-orange-300 fade-up">Industry Insights</span>
+    <h1 class="font-heading font-black text-4xl lg:text-6xl text-white mt-2 mb-4 fade-up stagger-1">News & Blog</h1>
+    <p class="text-white/75 text-lg max-w-2xl mx-auto fade-up stagger-2">Expert electrical tips, industry news, and project insights from the Alpha9Electric team.</p>
+  </div>
+</section>
+
+<!-- BLOG POSTS -->
+<section class="py-24 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4">
+    <!-- Featured Post -->
+    <div class="mb-16 fade-up">
+      <div class="card overflow-hidden">
+        <div class="grid grid-cols-1 lg:grid-cols-2">
+          <div class="overflow-hidden h-72 lg:h-auto">
+            <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=900&q=80&auto=format&fit=crop"
+                 alt="Future of Industrial Power" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" loading="lazy" />
+          </div>
+          <div class="p-10 flex flex-col justify-center">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">Featured</span>
+              <span class="bg-primary/10 text-primary text-xs font-bold px-2.5 py-1 rounded-full">Industry</span>
+              <span class="text-gray-400 text-sm">January 15, 2025</span>
+            </div>
+            <h2 class="font-heading font-bold text-2xl text-primary mb-4 leading-snug">The Future of Industrial Power Distribution Systems</h2>
+            <p class="text-gray-600 leading-relaxed mb-6">Exploring how smart grid technology, advanced transformers, and AI-driven monitoring systems are reshaping the way industrial plants manage and distribute electrical power. With growing demand for efficiency and sustainability, the electrical landscape is changing faster than ever.</p>
+            <div class="flex items-center gap-4 text-sm text-gray-500 mb-6">
+              <span class="flex items-center gap-1.5"><i data-lucide="user" class="w-4 h-4 text-accent"></i> Alpha9Electric Team</span>
+              <span class="flex items-center gap-1.5"><i data-lucide="clock" class="w-4 h-4 text-accent"></i> 8 min read</span>
+            </div>
+            <a href="#" class="btn-primary self-start">Read Full Article <i data-lucide="arrow-right" class="w-5 h-5"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Blog Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <article class="blog-card fade-up stagger-1">
+        <div class="overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80&auto=format&fit=crop" alt="Electrical Safety Tips" loading="lazy" />
+        </div>
+        <div class="p-6">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="bg-accent/10 text-accent text-xs font-bold px-2.5 py-1 rounded-full">Safety</span>
+            <span class="text-gray-400 text-xs">Dec 28, 2024</span>
+          </div>
+          <h3 class="font-bold text-gray-900 text-lg mb-2 leading-snug">Top 5 Electrical Safety Tips for Industrial Facilities</h3>
+          <p class="text-gray-500 text-sm leading-relaxed mb-4">Essential safety guidelines every facility manager should know to prevent electrical hazards and ensure full code compliance.</p>
+          <div class="flex items-center justify-between text-sm">
+            <span class="text-gray-400 flex items-center gap-1.5"><i data-lucide="clock" class="w-3.5 h-3.5"></i> 5 min read</span>
+            <a href="#" class="text-accent font-semibold flex items-center gap-1.5 hover:gap-3 transition-all">Read More <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="blog-card fade-up stagger-2">
+        <div class="overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600&q=80&auto=format&fit=crop" alt="Control Panels" loading="lazy" />
+        </div>
+        <div class="p-6">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="bg-green-100 text-green-700 text-xs font-bold px-2.5 py-1 rounded-full">Technology</span>
+            <span class="text-gray-400 text-xs">Dec 10, 2024</span>
+          </div>
+          <h3 class="font-bold text-gray-900 text-lg mb-2 leading-snug">Smart Control Panels: The Next Step in Automation</h3>
+          <p class="text-gray-500 text-sm leading-relaxed mb-4">How PLC and VFD control panel technology is transforming manufacturing operations with unprecedented efficiency and precision.</p>
+          <div class="flex items-center justify-between text-sm">
+            <span class="text-gray-400 flex items-center gap-1.5"><i data-lucide="clock" class="w-3.5 h-3.5"></i> 6 min read</span>
+            <a href="#" class="text-accent font-semibold flex items-center gap-1.5 hover:gap-3 transition-all">Read More <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="blog-card fade-up stagger-3">
+        <div class="overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=600&q=80&auto=format&fit=crop" alt="Energy Efficiency" loading="lazy" />
+        </div>
+        <div class="p-6">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="bg-blue-100 text-blue-700 text-xs font-bold px-2.5 py-1 rounded-full">Energy</span>
+            <span class="text-gray-400 text-xs">Nov 22, 2024</span>
+          </div>
+          <h3 class="font-bold text-gray-900 text-lg mb-2 leading-snug">How to Reduce Energy Costs with Smart Electrical Upgrades</h3>
+          <p class="text-gray-500 text-sm leading-relaxed mb-4">Practical strategies and electrical upgrades that can significantly reduce your commercial or industrial facility's energy bill.</p>
+          <div class="flex items-center justify-between text-sm">
+            <span class="text-gray-400 flex items-center gap-1.5"><i data-lucide="clock" class="w-3.5 h-3.5"></i> 7 min read</span>
+            <a href="#" class="text-accent font-semibold flex items-center gap-1.5 hover:gap-3 transition-all">Read More <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="blog-card fade-up stagger-4">
+        <div class="overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&q=80&auto=format&fit=crop" alt="Transformer Maintenance" loading="lazy" />
+        </div>
+        <div class="p-6">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="bg-orange-100 text-orange-700 text-xs font-bold px-2.5 py-1 rounded-full">Maintenance</span>
+            <span class="text-gray-400 text-xs">Nov 5, 2024</span>
+          </div>
+          <h3 class="font-bold text-gray-900 text-lg mb-2 leading-snug">A Complete Guide to Transformer Maintenance</h3>
+          <p class="text-gray-500 text-sm leading-relaxed mb-4">Extend the life of your transformers and prevent costly failures with this comprehensive maintenance checklist from our engineers.</p>
+          <div class="flex items-center justify-between text-sm">
+            <span class="text-gray-400 flex items-center gap-1.5"><i data-lucide="clock" class="w-3.5 h-3.5"></i> 9 min read</span>
+            <a href="#" class="text-accent font-semibold flex items-center gap-1.5 hover:gap-3 transition-all">Read More <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="blog-card fade-up stagger-5">
+        <div class="overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=80&auto=format&fit=crop" alt="CCTV Systems" loading="lazy" />
+        </div>
+        <div class="p-6">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="bg-purple-100 text-purple-700 text-xs font-bold px-2.5 py-1 rounded-full">Security</span>
+            <span class="text-gray-400 text-xs">Oct 18, 2024</span>
+          </div>
+          <h3 class="font-bold text-gray-900 text-lg mb-2 leading-snug">Choosing the Right CCTV System for Your Business</h3>
+          <p class="text-gray-500 text-sm leading-relaxed mb-4">A buyer's guide to selecting the right security camera and monitoring system for commercial properties of any size.</p>
+          <div class="flex items-center justify-between text-sm">
+            <span class="text-gray-400 flex items-center gap-1.5"><i data-lucide="clock" class="w-3.5 h-3.5"></i> 6 min read</span>
+            <a href="#" class="text-accent font-semibold flex items-center gap-1.5 hover:gap-3 transition-all">Read More <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="blog-card fade-up stagger-6">
+        <div class="overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&q=80&auto=format&fit=crop" alt="Panel Upgrades" loading="lazy" />
+        </div>
+        <div class="p-6">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="bg-red-100 text-red-700 text-xs font-bold px-2.5 py-1 rounded-full">Residential</span>
+            <span class="text-gray-400 text-xs">Sep 30, 2024</span>
+          </div>
+          <h3 class="font-bold text-gray-900 text-lg mb-2 leading-snug">When Should You Upgrade Your Home's Electrical Panel?</h3>
+          <p class="text-gray-500 text-sm leading-relaxed mb-4">Signs that your home's electrical panel needs an upgrade, and what to expect during the installation process.</p>
+          <div class="flex items-center justify-between text-sm">
+            <span class="text-gray-400 flex items-center gap-1.5"><i data-lucide="clock" class="w-3.5 h-3.5"></i> 5 min read</span>
+            <a href="#" class="text-accent font-semibold flex items-center gap-1.5 hover:gap-3 transition-all">Read More <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER SIGNUP -->
+<section class="orange-banner py-20 text-white">
+  <div class="max-w-2xl mx-auto px-4 text-center relative z-10">
+    <i data-lucide="mail" class="w-12 h-12 mx-auto mb-5 text-white/80"></i>
+    <h2 class="font-heading font-black text-4xl mb-4 fade-up">Stay In the Know</h2>
+    <p class="text-white/85 mb-8 fade-up stagger-1">Subscribe to our newsletter for electrical tips, safety updates, and company news delivered right to your inbox.</p>
+    <div class="flex gap-3 max-w-md mx-auto fade-up stagger-2">
+      <input type="email" placeholder="Your email address" class="flex-1 px-5 py-3.5 rounded-full border-0 outline-none text-gray-900 font-medium" />
+      <button class="bg-primary text-white font-bold px-6 py-3.5 rounded-full hover:bg-primary-dark transition-colors whitespace-nowrap">Subscribe</button>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer pt-16 pb-8">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+      <div>
+        <!-- <img src="images/logo.png" alt="Alpha9Electric Logo" class="h-12 footer-logo mb-5 object-contain" /> -->
+        <p class="text-white/60 text-sm leading-relaxed">Alpha9Electric — Trusted electrical solutions for 30+ years.</p>
+      </div>
+      <div><h4 class="footer-heading">Quick Links</h4><ul class="space-y-2.5"><li><a href="index.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Home</a></li><li><a href="about.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>About Us</a></li><li><a href="products.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Products</a></li><li><a href="services.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Services</a></li><li><a href="contact.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Contact</a></li></ul></div>
+      <div><h4 class="footer-heading">Categories</h4><ul class="space-y-2.5"><li><a href="blog.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Industry News</a></li><li><a href="blog.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Safety Tips</a></li><li><a href="blog.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Technology</a></li><li><a href="blog.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Maintenance</a></li></ul></div>
+      <div><h4 class="footer-heading">Contact</h4><ul class="space-y-4"><li class="flex items-start gap-3 text-sm text-white/70"><i data-lucide="map-pin" class="w-4 h-4 text-accent mt-0.5"></i>937 Gallaher Rd, Kingston TN</li><li><a href="tel:8652900218" class="flex items-center gap-3 text-sm footer-link"><i data-lucide="phone" class="w-4 h-4 text-accent"></i>(865) 290-0218</a></li><li><a href="mailto:info@alph9electric.com" class="flex items-center gap-3 text-sm footer-link"><i data-lucide="mail" class="w-4 h-4 text-accent"></i>info@alph9electric.com</a></li></ul></div>
+    </div>
+    <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-white/40">
+      <p>© 2025 Alpha9Electric. All rights reserved.</p><p>Power Product Manufacturing & System Solutions</p>
+    </div>
+  </div>
+</footer>
+<button id="back-to-top"><i data-lucide="chevron-up" class="w-5 h-5"></i></button>
+<script>lucide.createIcons();</script>
+<script src="script.js"></script>
+</body>
+</html>

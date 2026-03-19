@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Alpha9Electric</title>
+  <meta name="description" content="Explore Alpha9Electric's portfolio of completed electrical projects — residential, commercial, and industrial installations across Tennessee." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: { DEFAULT: '#181f6f', dark: '#0f1550', light: '#2d3a9e' },
+            accent: { DEFAULT: '#f1620f', light: '#ff7a2e', dark: '#c44d00' }
+          },
+          fontFamily: { sans: ['Inter', 'sans-serif'], heading: ['Poppins', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+  <!-- Extra style for lightbox -->
+  <style>
+    #lightbox { position:fixed; inset:0; background:rgba(0,0,0,.92); z-index:3000; display:flex; align-items:center; justify-content:center; opacity:0; pointer-events:none; transition:opacity .3s; padding:1rem; }
+    #lightbox.open { opacity:1; pointer-events:all; }
+    #lightbox img { max-width:100%; max-height:90vh; border-radius:.75rem; object-fit:contain; }
+    #lightbox-close { position:absolute; top:1.25rem; right:1.5rem; color:white; cursor:pointer; background:rgba(255,255,255,.15); border-radius:50%; width:2.75rem; height:2.75rem; display:flex; align-items:center; justify-content:center; border:none; transition:all .3s; }
+    #lightbox-close:hover { background:rgba(241,98,15,.8); }
+  </style>
+</head>
+<body>
+<div id="scroll-progress"></div>
+
+<!-- TOP BAR -->
+<div class="top-bar hidden md:block">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between">
+    <div class="flex items-center gap-6">
+      <a href="tel:8652900218" class="flex items-center gap-2 hover:text-accent transition-colors"><i data-lucide="phone" class="w-3.5 h-3.5"></i>(865) 290-0218</a>
+      <a href="mailto:info@alph9electric.com" class="flex items-center gap-2 hover:text-accent transition-colors"><i data-lucide="mail" class="w-3.5 h-3.5"></i>info@alph9electric.com</a>
+    </div>
+    <span class="flex items-center gap-1.5 text-green-400 font-medium"><i data-lucide="shield-check" class="w-3.5 h-3.5"></i>100% Satisfaction Guaranteed</span>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav id="navbar" class="py-4 scrolled" style="background:white;box-shadow:0 2px 20px rgba(0,0,0,.1);">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between">
+    <a href="index.html"><img src="images/logo.png" alt="Alpha9Electric Logo" class="h-12 w-auto object-contain" style="filter:none" /></a>
+    <div class="hidden lg:flex items-center gap-8">
+      <a href="index.html" class="nav-link text-gray-800 text-sm font-medium">Home</a>
+      <a href="about.html" class="nav-link text-gray-800 text-sm font-medium">About Us</a>
+      <a href="products.html" class="nav-link text-gray-800 text-sm font-medium">Products & Solutions</a>
+      <a href="services.html" class="nav-link text-gray-800 text-sm font-medium">Services</a>
+      <a href="service-areas.html" class="nav-link text-gray-800 text-sm font-medium">Service Areas</a>
+      <a href="projects.html" class="nav-link text-gray-800 text-sm font-medium active">Projects</a>
+      <a href="blog.html" class="nav-link text-gray-800 text-sm font-medium">Blog</a>
+      <a href="contact.html" class="btn-primary text-sm py-2.5 px-5"><i data-lucide="phone" class="w-4 h-4"></i> Contact Us</a>
+    </div>
+    <button id="menu-btn" class="lg:hidden text-primary p-2"><i data-lucide="menu" class="w-6 h-6"></i></button>
+  </div>
+</nav>
+<div id="mobile-menu">
+  <button id="menu-close" class="absolute top-6 right-6 text-white"><i data-lucide="x" class="w-8 h-8"></i></button>
+  <a href="index.html" class="mobile-nav-link">Home</a>
+  <a href="about.html" class="mobile-nav-link">About Us</a>
+  <a href="products.html" class="mobile-nav-link">Products & Solutions</a>
+  <a href="services.html" class="mobile-nav-link">Services</a>
+  <a href="service-areas.html" class="mobile-nav-link">Service Areas</a>
+  <a href="projects.html" class="mobile-nav-link">Projects</a>
+  <a href="blog.html" class="mobile-nav-link">Blog</a>
+  <a href="contact.html" class="mobile-nav-link">Contact</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="max-w-7xl mx-auto px-4 text-center text-white relative z-10">
+    <!-- <nav class="flex items-center justify-center gap-2 text-sm text-white/60 mb-6">
+      <a href="index.html" class="hover:text-white transition-colors">Home</a>
+      <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+      <span class="text-white">Projects</span>
+    </nav> -->
+    <span class="section-eyebrow text-orange-300 fade-up">Our Portfolio</span>
+    <h1 class="font-heading font-black text-4xl lg:text-6xl text-white mt-2 mb-4 fade-up stagger-1">Our Projects</h1>
+    <p class="text-white/75 text-lg max-w-2xl mx-auto fade-up stagger-2">Showcasing our expertise across residential, commercial, and industrial electrical projects throughout Tennessee and beyond.</p>
+  </div>
+</section>
+
+<!-- PROJECTS FILTER + GRID -->
+<section class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-4">
+
+    <!-- Filter Buttons -->
+    <div class="flex flex-wrap justify-center gap-3 mb-14 fade-up">
+      <button class="filter-btn active" data-filter="all">All Projects</button>
+      <button class="filter-btn" data-filter="residential">
+        <span class="flex items-center gap-1.5"><i data-lucide="home" class="w-4 h-4"></i> Residential</span>
+      </button>
+      <button class="filter-btn" data-filter="commercial">
+        <span class="flex items-center gap-1.5"><i data-lucide="building-2" class="w-4 h-4"></i> Commercial</span>
+      </button>
+      <button class="filter-btn" data-filter="industrial">
+        <span class="flex items-center gap-1.5"><i data-lucide="factory" class="w-4 h-4"></i> Industrial</span>
+      </button>
+    </div>
+
+    <!-- Projects Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="projects-grid">
+
+      <!-- Project 1 -->
+      <div class="project-card-wrapper fade-up stagger-1" data-category="industrial">
+        <div class="project-card" data-project='{"img":"https://images.unsplash.com/photo-1486325212027-8081e485255e?w=900&q=80&auto=format&fit=crop","title":"Industrial Power Grid Upgrade","category":"Industrial","location":"Memphis, TN","description":"Complete high-voltage switchgear replacement and power distribution upgrade for a large-scale manufacturing plant. Project included new 15KV switchgear, transformer installation, and complete rewiring of the production floor.","tags":["Switchgear","HV Installation","Manufacturing"]}'>
+          <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=700&q=80&auto=format&fit=crop" alt="Industrial Power Grid Upgrade" loading="lazy" />
+          <div class="project-overlay">
+            <div class="text-white"><p class="text-accent font-bold text-xs tracking-widest uppercase mb-1">Industrial</p><h3 class="font-bold text-xl">Industrial Power Grid Upgrade</h3><p class="text-white/80 text-sm mt-1">Click to view details</p></div>
+          </div>
+        </div>
+        <div class="project-card-info">
+          <p class="project-category"><i data-lucide="tag" class="w-3.5 h-3.5"></i> Industrial</p>
+          <h3 class="font-bold text-gray-900">Industrial Power Grid Upgrade</h3>
+          <p class="text-sm text-gray-500 mt-1">Memphis, TN</p>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card-wrapper fade-up stagger-2" data-category="residential">
+        <div class="project-card" data-project='{"img":"https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=900&q=80&auto=format&fit=crop","title":"Modern Residential Complex","category":"Residential","location":"Kingston, TN","description":"Complete electrical installation for a 120-unit modern residential development. Work included full wiring, panel installations, lighting design, and smart home integration for each unit.","tags":["Residential Wiring","Panel Install","Smart Home"]}'>
+          <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=700&q=80&auto=format&fit=crop" alt="Modern Residential Complex" loading="lazy" />
+          <div class="project-overlay">
+            <div class="text-white"><p class="text-accent font-bold text-xs tracking-widest uppercase mb-1">Residential</p><h3 class="font-bold text-xl">Modern Residential Complex</h3><p class="text-white/80 text-sm mt-1">Click to view details</p></div>
+          </div>
+        </div>
+        <div class="project-card-info">
+          <p class="project-category"><i data-lucide="tag" class="w-3.5 h-3.5"></i> Residential</p>
+          <h3 class="font-bold text-gray-900">Modern Residential Complex</h3>
+          <p class="text-sm text-gray-500 mt-1">Kingston, TN</p>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card-wrapper fade-up stagger-3" data-category="commercial">
+        <div class="project-card" data-project='{"img":"https://images.unsplash.com/photo-1497366216548-37526070297c?w=900&q=80&auto=format&fit=crop","title":"Office Tower Electrical Systems","category":"Commercial","location":"Nashville, TN","description":"Full electrical design and installation for a 12-story office tower. Included main switchgear, UPS systems, emergency power, lighting controls, and complete building management system integration.","tags":["Commercial","High-Rise","Switchgear","UPS"]}'>
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&q=80&auto=format&fit=crop" alt="Office Tower Electrical Systems" loading="lazy" />
+          <div class="project-overlay">
+            <div class="text-white"><p class="text-accent font-bold text-xs tracking-widest uppercase mb-1">Commercial</p><h3 class="font-bold text-xl">Office Tower Electrical Systems</h3><p class="text-white/80 text-sm mt-1">Click to view details</p></div>
+          </div>
+        </div>
+        <div class="project-card-info">
+          <p class="project-category"><i data-lucide="tag" class="w-3.5 h-3.5"></i> Commercial</p>
+          <h3 class="font-bold text-gray-900">Office Tower Electrical Systems</h3>
+          <p class="text-sm text-gray-500 mt-1">Nashville, TN</p>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="project-card-wrapper fade-up stagger-4" data-category="industrial">
+        <div class="project-card" data-project='{"img":"https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=900&q=80&auto=format&fit=crop","title":"Manufacturing Plant PLC System","category":"Industrial","location":"Knoxville, TN","description":"Design and installation of a comprehensive PLC-based automation and control system for a large manufacturing facility. Project involved 8 control cabinets, SCADA integration, and VFD motor controls.","tags":["PLC","SCADA","Automation","VFD"]}'>
+          <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=700&q=80&auto=format&fit=crop" alt="Manufacturing Plant PLC System" loading="lazy" />
+          <div class="project-overlay">
+            <div class="text-white"><p class="text-accent font-bold text-xs tracking-widest uppercase mb-1">Industrial</p><h3 class="font-bold text-xl">Manufacturing Plant PLC System</h3><p class="text-white/80 text-sm mt-1">Click to view details</p></div>
+          </div>
+        </div>
+        <div class="project-card-info">
+          <p class="project-category"><i data-lucide="tag" class="w-3.5 h-3.5"></i> Industrial</p>
+          <h3 class="font-bold text-gray-900">Manufacturing Plant PLC System</h3>
+          <p class="text-sm text-gray-500 mt-1">Knoxville, TN</p>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="project-card-wrapper fade-up stagger-5" data-category="commercial">
+        <div class="project-card" data-project='{"img":"https://images.unsplash.com/photo-1518770660439-4636190af475?w=900&q=80&auto=format&fit=crop","title":"Retail Shopping Center Wiring","category":"Commercial","location":"Chattanooga, TN","description":"Complete electrical installation for a 200,000 sq ft retail shopping complex. Included main distribution boards, emergency power systems, exterior LED lighting, and CCTV infrastructure.","tags":["Commercial","LED Lighting","CCTV","Distribution"]}'>
+          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=700&q=80&auto=format&fit=crop" alt="Retail Shopping Center Wiring" loading="lazy" />
+          <div class="project-overlay">
+            <div class="text-white"><p class="text-accent font-bold text-xs tracking-widest uppercase mb-1">Commercial</p><h3 class="font-bold text-xl">Retail Shopping Center Wiring</h3><p class="text-white/80 text-sm mt-1">Click to view details</p></div>
+          </div>
+        </div>
+        <div class="project-card-info">
+          <p class="project-category"><i data-lucide="tag" class="w-3.5 h-3.5"></i> Commercial</p>
+          <h3 class="font-bold text-gray-900">Retail Shopping Center Wiring</h3>
+          <p class="text-sm text-gray-500 mt-1">Chattanooga, TN</p>
+        </div>
+      </div>
+
+      <!-- Project 6 -->
+      <div class="project-card-wrapper fade-up stagger-6" data-category="residential">
+        <div class="project-card" data-project='{"img":"https://images.unsplash.com/photo-1549517045-bc93de075e53?w=900&q=80&auto=format&fit=crop","title":"Luxury Home Smart System","category":"Residential","location":"Kingston, TN","description":"Full smart home electrical integration for a 6,500 sq ft luxury residence. Installed whole-home automation, LED lighting controls, EV charger, generator backup, and advanced security system.","tags":["Smart Home","EV Charger","Generator","Automation"]}'>
+          <img src="https://images.unsplash.com/photo-1549517045-bc93de075e53?w=700&q=80&auto=format&fit=crop" alt="Luxury Home Smart System" loading="lazy" />
+          <div class="project-overlay">
+            <div class="text-white"><p class="text-accent font-bold text-xs tracking-widest uppercase mb-1">Residential</p><h3 class="font-bold text-xl">Luxury Home Smart System</h3><p class="text-white/80 text-sm mt-1">Click to view details</p></div>
+          </div>
+        </div>
+        <div class="project-card-info">
+          <p class="project-category"><i data-lucide="tag" class="w-3.5 h-3.5"></i> Residential</p>
+          <h3 class="font-bold text-gray-900">Luxury Home Smart System</h3>
+          <p class="text-sm text-gray-500 mt-1">Kingston, TN</p>
+        </div>
+      </div>
+
+      <!-- Project 7 -->
+      <div class="project-card-wrapper fade-up stagger-1" data-category="industrial">
+        <div class="project-card" data-project='{"img":"https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=900&q=80&auto=format&fit=crop","title":"Substation Transformer Install","category":"Industrial","location":"Oak Ridge, TN","description":"Design, manufacture, and installation of a custom 15MVA power transformer for a utility substation upgrade. Project included civil works, foundation, cabling, and commissioning.","tags":["Power Transformer","Substation","HV Engineering"]}'>
+          <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=700&q=80&auto=format&fit=crop" alt="Substation Transformer Install" loading="lazy" />
+          <div class="project-overlay">
+            <div class="text-white"><p class="text-accent font-bold text-xs tracking-widest uppercase mb-1">Industrial</p><h3 class="font-bold text-xl">Substation Transformer Install</h3><p class="text-white/80 text-sm mt-1">Click to view details</p></div>
+          </div>
+        </div>
+        <div class="project-card-info">
+          <p class="project-category"><i data-lucide="tag" class="w-3.5 h-3.5"></i> Industrial</p>
+          <h3 class="font-bold text-gray-900">Substation Transformer Install</h3>
+          <p class="text-sm text-gray-500 mt-1">Oak Ridge, TN</p>
+        </div>
+      </div>
+
+      <!-- Project 8 -->
+      <div class="project-card-wrapper fade-up stagger-2" data-category="commercial">
+        <div class="project-card" data-project='{"img":"https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=80&auto=format&fit=crop","title":"Hospital Emergency Power System","category":"Commercial","location":"Nashville, TN","description":"Critical power system design and installation for a regional hospital. Included redundant UPS systems, automatic transfer switches, generator systems, and life-safety circuit installation.","tags":["Healthcare","UPS","Generators","Critical Power"]}'>
+          <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=700&q=80&auto=format&fit=crop" alt="Hospital Emergency Power System" loading="lazy" />
+          <div class="project-overlay">
+            <div class="text-white"><p class="text-accent font-bold text-xs tracking-widest uppercase mb-1">Commercial</p><h3 class="font-bold text-xl">Hospital Emergency Power System</h3><p class="text-white/80 text-sm mt-1">Click to view details</p></div>
+          </div>
+        </div>
+        <div class="project-card-info">
+          <p class="project-category"><i data-lucide="tag" class="w-3.5 h-3.5"></i> Commercial</p>
+          <h3 class="font-bold text-gray-900">Hospital Emergency Power System</h3>
+          <p class="text-sm text-gray-500 mt-1">Nashville, TN</p>
+        </div>
+      </div>
+
+      <!-- Project 9 -->
+      <div class="project-card-wrapper fade-up stagger-3" data-category="residential">
+        <div class="project-card" data-project='{"img":"https://images.unsplash.com/photo-1558449028-b53a39d100fc?w=900&q=80&auto=format&fit=crop","title":"Residential Neighborhood Wiring","category":"Residential","location":"Kingston, TN","description":"Full electrical installation for a new residential neighborhood development of 45 homes. Scope included underground distribution, individual home panels, lighting, and energy-efficient upgrades throughout.","tags":["New Construction","Underground","Panel Install","LED"]}'>
+          <img src="https://images.unsplash.com/photo-1558449028-b53a39d100fc?w=700&q=80&auto=format&fit=crop" alt="Residential Neighborhood Wiring" loading="lazy" />
+          <div class="project-overlay">
+            <div class="text-white"><p class="text-accent font-bold text-xs tracking-widest uppercase mb-1">Residential</p><h3 class="font-bold text-xl">Residential Neighborhood Wiring</h3><p class="text-white/80 text-sm mt-1">Click to view details</p></div>
+          </div>
+        </div>
+        <div class="project-card-info">
+          <p class="project-category"><i data-lucide="tag" class="w-3.5 h-3.5"></i> Residential</p>
+          <h3 class="font-bold text-gray-900">Residential Neighborhood Wiring</h3>
+          <p class="text-sm text-gray-500 mt-1">Kingston, TN</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROJECT DETAIL MODAL -->
+<div id="project-modal" class="modal-backdrop">
+  <div class="modal-box">
+    <div class="relative">
+      <img id="modal-img" src="" alt="" class="w-full h-72 object-cover rounded-t-2xl" data-lightbox />
+      <button id="modal-close" class="absolute top-4 right-4 w-10 h-10 bg-black/60 hover:bg-accent text-white rounded-full flex items-center justify-center transition-colors">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+      <span class="absolute bottom-4 left-4 bg-accent text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider" id="modal-category"></span>
+    </div>
+    <div class="p-8">
+      <div class="flex items-start justify-between gap-4 mb-4">
+        <h2 class="font-heading font-bold text-2xl text-primary" id="modal-title"></h2>
+        <div class="flex items-center gap-2 text-gray-500 text-sm shrink-0">
+          <i data-lucide="map-pin" class="w-4 h-4 text-accent"></i>
+          <span id="modal-location"></span>
+        </div>
+      </div>
+      <p class="text-gray-600 leading-relaxed mb-6" id="modal-desc"></p>
+      <div class="flex flex-wrap gap-2 mb-6" id="modal-tags"></div>
+      <div class="flex gap-4">
+        <a href="contact.html" class="btn-primary">
+          <i data-lucide="send" class="w-5 h-5"></i> Start a Similar Project
+        </a>
+        <button id="modal-close2" onclick="document.getElementById('project-modal').classList.remove('open');document.body.style.overflow='';" class="btn-outline">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- LIGHTBOX -->
+<div id="lightbox">
+  <button id="lightbox-close"><i data-lucide="x" class="w-5 h-5 text-white"></i></button>
+  <img id="lightbox-img" src="" alt="" />
+</div>
+
+<!-- CTA -->
+<section class="orange-banner py-20 text-white">
+  <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+    <h2 class="font-heading font-black text-4xl mb-5 fade-up">Have a Project in Mind?</h2>
+    <p class="text-white/85 text-lg mb-8 max-w-2xl mx-auto fade-up stagger-1">Tell us about your electrical project. Our team will provide a comprehensive plan and competitive quote tailored to your needs.</p>
+    <a href="contact.html" class="inline-flex items-center gap-2 bg-white text-accent font-bold px-8 py-4 rounded-full hover:-translate-y-1 transition-all shadow-lg fade-up stagger-2">
+      <i data-lucide="send" class="w-5 h-5"></i> Start Your Project Today
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer pt-16 pb-8">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+      <div>
+        <!-- <img src="images/logo.png" alt="Alpha9Electric Logo" class="h-12 footer-logo mb-5 object-contain" /> -->
+        <p class="text-white/60 text-sm leading-relaxed">
+        Alpha9Electric — Trusted electrical solutions since 30+ years.</p>
+      </div>
+      <div><h4 class="footer-heading">Quick Links</h4><ul class="space-y-2.5"><li><a href="index.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Home</a></li><li><a href="about.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>About Us</a></li><li><a href="products.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Products</a></li><li><a href="services.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Services</a></li><li><a href="contact.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Contact</a></li></ul></div>
+      <div><h4 class="footer-heading">Project Types</h4><ul class="space-y-2.5"><li><a href="projects.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Residential</a></li><li><a href="projects.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Commercial</a></li><li><a href="projects.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Industrial</a></li><li><a href="projects.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Custom Installations</a></li></ul></div>
+      <div><h4 class="footer-heading">Contact</h4><ul class="space-y-4"><li class="flex items-start gap-3 text-sm text-white/70"><i data-lucide="map-pin" class="w-4 h-4 text-accent mt-0.5"></i>937 Gallaher Rd, Kingston TN</li><li><a href="tel:8652900218" class="flex items-center gap-3 text-sm footer-link"><i data-lucide="phone" class="w-4 h-4 text-accent"></i>(865) 290-0218</a></li><li><a href="mailto:info@alph9electric.com" class="flex items-center gap-3 text-sm footer-link"><i data-lucide="mail" class="w-4 h-4 text-accent"></i>info@alph9electric.com</a></li></ul></div>
+    </div>
+    <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-white/40">
+      <p>© 2025 Alpha9Electric. All rights reserved.</p><p>Power Product Manufacturing & System Solutions</p>
+    </div>
+  </div>
+</footer>
+
+<button id="back-to-top"><i data-lucide="chevron-up" class="w-5 h-5"></i></button>
+<script>lucide.createIcons();</script>
+<script src="script.js"></script>
+</body>
+</html>

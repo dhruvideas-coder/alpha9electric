@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | Alpha9Electric</title>
+  <meta name="description" content="Learn about Alpha9Electric — 30+ years as a trusted power product manufacturer and electrical system solution provider." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: { DEFAULT: '#181f6f', dark: '#0f1550', light: '#2d3a9e' },
+            accent: { DEFAULT: '#f1620f', light: '#ff7a2e', dark: '#c44d00' }
+          },
+          fontFamily: { sans: ['Inter', 'sans-serif'], heading: ['Poppins', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+<body>
+<div id="scroll-progress"></div>
+
+<!-- TOP INFO BAR -->
+<div class="top-bar hidden md:block">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between">
+    <div class="flex items-center gap-6">
+      <a href="tel:8652900218" class="flex items-center gap-2 hover:text-accent transition-colors"><i data-lucide="phone" class="w-3.5 h-3.5"></i>(865) 290-0218</a>
+      <a href="mailto:info@alph9electric.com" class="flex items-center gap-2 hover:text-accent transition-colors"><i data-lucide="mail" class="w-3.5 h-3.5"></i>info@alph9electric.com</a>
+    </div>
+    <span class="flex items-center gap-1.5 text-green-400 font-medium"><i data-lucide="shield-check" class="w-3.5 h-3.5"></i>100% Satisfaction Guaranteed</span>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav id="navbar" class="py-4 scrolled" style="background:white;box-shadow:0 2px 20px rgba(0,0,0,.1);">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-3">
+      <img src="images/logo.png" alt="Alpha9Electric Logo" class="nav-logo-img h-12 w-auto object-contain" style="filter:none" />
+    </a>
+    <div class="hidden lg:flex items-center gap-8">
+      <a href="index.html" class="nav-link text-gray-800 text-sm font-medium">Home</a>
+      <a href="about.html" class="nav-link text-gray-800 text-sm font-medium active">About Us</a>
+      <a href="products.html" class="nav-link text-gray-800 text-sm font-medium">Products & Solutions</a>
+      <a href="services.html" class="nav-link text-gray-800 text-sm font-medium">Services</a>
+      <a href="service-areas.html" class="nav-link text-gray-800 text-sm font-medium">Service Areas</a>
+      <a href="projects.html" class="nav-link text-gray-800 text-sm font-medium">Projects</a>
+      <a href="blog.html" class="nav-link text-gray-800 text-sm font-medium">Blog</a>
+      <a href="contact.html" class="btn-primary text-sm py-2.5 px-5"><i data-lucide="phone" class="w-4 h-4"></i> Contact Us</a>
+    </div>
+    <button id="menu-btn" class="lg:hidden text-primary p-2"><i data-lucide="menu" class="w-6 h-6"></i></button>
+  </div>
+</nav>
+<div id="mobile-menu">
+  <button id="menu-close" class="absolute top-6 right-6 text-white"><i data-lucide="x" class="w-8 h-8"></i></button>
+  <a href="index.html" class="mobile-nav-link">Home</a>
+  <a href="about.html" class="mobile-nav-link">About Us</a>
+  <a href="products.html" class="mobile-nav-link">Products & Solutions</a>
+  <a href="services.html" class="mobile-nav-link">Services</a>
+  <a href="service-areas.html" class="mobile-nav-link">Service Areas</a>
+  <a href="projects.html" class="mobile-nav-link">Projects</a>
+  <a href="blog.html" class="mobile-nav-link">Blog</a>
+  <a href="contact.html" class="mobile-nav-link">Contact</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="max-w-7xl mx-auto px-4 text-center text-white relative z-10">
+    <!-- <nav class="flex items-center justify-center gap-2 text-sm text-white/60 mb-6">
+      <a href="index.html" class="hover:text-white transition-colors">Home</a>
+      <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+      <span class="text-white">About Us</span>
+    </nav> -->
+    <span class="section-eyebrow text-orange-300 fade-up">Our Story</span>
+    <h1 class="font-heading font-black text-4xl lg:text-6xl text-white mt-2 mb-4 fade-up stagger-1">About Alpha9Electric</h1>
+    <p class="text-white/75 text-lg max-w-2xl mx-auto fade-up stagger-2">30+ years of powering homes, businesses, and industries across Tennessee and beyond.</p>
+  </div>
+</section>
+
+<!-- MISSION SECTION -->
+<section class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div>
+        <span class="section-eyebrow fade-up">Who We Are</span>
+        <h2 class="section-title fade-up stagger-1">Power Product Manufacturing & System Solution Provider</h2>
+        <div class="accent-divider fade-up stagger-2"></div>
+        <p class="text-gray-600 leading-relaxed mt-4 mb-5 fade-up stagger-2">
+          Founded with a clear mission — to deliver precision-engineered electrical products and solutions that power industries, protect homes, and accelerate businesses — Alpha9Electric has grown into a trusted name in the electrical manufacturing sector.
+        </p>
+        <p class="text-gray-600 leading-relaxed mb-5 fade-up stagger-3">
+          Based in Kingston, Tennessee, we combine over 30 years of hands-on experience with the latest engineering standards to design, manufacture, and install electrical systems that stand the test of time.
+        </p>
+        <p class="text-gray-600 leading-relaxed mb-8 fade-up stagger-3">
+          Our team of licensed engineers and electricians are committed to delivering quality, safety, and value on every project — no matter the scale or complexity.
+        </p>
+        <div class="grid grid-cols-2 gap-4 fade-up stagger-4">
+          <div class="bg-gray-50 rounded-xl p-4 text-center border border-gray-100">
+            <div class="text-3xl font-black font-heading text-primary"><span data-count="30">0</span><span class="text-accent">+</span></div>
+            <p class="text-sm text-gray-500 mt-1 font-medium">Years Experience</p>
+          </div>
+          <div class="bg-gray-50 rounded-xl p-4 text-center border border-gray-100">
+            <div class="text-3xl font-black font-heading text-primary"><span data-count="500">0</span><span class="text-accent">+</span></div>
+            <p class="text-sm text-gray-500 mt-1 font-medium">Projects Delivered</p>
+          </div>
+        </div>
+      </div>
+      <div class="relative fade-in">
+        <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&q=80&auto=format&fit=crop"
+             alt="Alpha9Electric team at work" class="rounded-2xl w-full h-[480px] object-cover shadow-2xl" loading="lazy" />
+        <div class="absolute -bottom-6 -left-6 bg-accent rounded-2xl p-6 shadow-xl hidden md:block">
+          <i data-lucide="award" class="w-8 h-8 text-white mb-2"></i>
+          <p class="text-white font-bold">Licensed &</p>
+          <p class="text-white font-bold">Certified</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section class="py-24 bg-gray-50 bg-pattern">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="text-center mb-16">
+      <span class="section-eyebrow fade-up">Our Values</span>
+      <h2 class="section-title fade-up stagger-1">What Drives Us Every Day</h2>
+      <div class="accent-divider center fade-up stagger-2"></div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="card service-card fade-up stagger-1">
+        <div class="icon-wrap"><i data-lucide="shield-check" class="w-7 h-7 text-primary"></i></div>
+        <h3 class="text-lg font-bold text-primary mb-3">Safety First</h3>
+        <p class="text-gray-600 text-sm leading-relaxed">Every decision starts with safety — for our team, our clients, and the communities we serve.</p>
+      </div>
+      <div class="card service-card fade-up stagger-2">
+        <div class="icon-wrap"><i data-lucide="star" class="w-7 h-7 text-primary"></i></div>
+        <h3 class="text-lg font-bold text-primary mb-3">Quality Excellence</h3>
+        <p class="text-gray-600 text-sm leading-relaxed">We use only premium components and follow strict engineering standards in everything we make.</p>
+      </div>
+      <div class="card service-card fade-up stagger-3">
+        <div class="icon-wrap"><i data-lucide="users" class="w-7 h-7 text-primary"></i></div>
+        <h3 class="text-lg font-bold text-primary mb-3">Client Focus</h3>
+        <p class="text-gray-600 text-sm leading-relaxed">Your satisfaction is our success. We listen, adapt, and deliver beyond expectations — always.</p>
+      </div>
+      <div class="card service-card fade-up stagger-4">
+        <div class="icon-wrap"><i data-lucide="lightbulb" class="w-7 h-7 text-primary"></i></div>
+        <h3 class="text-lg font-bold text-primary mb-3">Innovation</h3>
+        <p class="text-gray-600 text-sm leading-relaxed">We stay ahead of electrical technology trends to bring modern, efficient solutions to every project.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section class="py-24 bg-white overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="text-center mb-16">
+      <span class="section-eyebrow fade-up">Our Journey</span>
+      <h2 class="section-title fade-up stagger-1">Milestones That Define Our Legacy</h2>
+      <div class="accent-divider center fade-up stagger-2"></div>
+    </div>
+    <div class="timeline max-w-4xl mx-auto">
+      <div class="timeline-item left fade-up stagger-1">
+        <div class="timeline-dot"></div>
+        <div class="bg-gray-50 rounded-xl p-6 border border-gray-100 shadow-sm">
+          <span class="text-accent font-black text-2xl font-heading block mb-2">1994</span>
+          <h3 class="font-bold text-primary text-lg mb-2">Company Founded</h3>
+          <p class="text-gray-600 text-sm">Alpha9Electric was established in Kingston, Tennessee, with a vision to provide precision-engineered electrical solutions to the region.</p>
+        </div>
+      </div>
+      <div class="timeline-item right fade-up stagger-2">
+        <div class="timeline-dot"></div>
+        <div class="bg-gray-50 rounded-xl p-6 border border-gray-100 shadow-sm">
+          <span class="text-accent font-black text-2xl font-heading block mb-2">2002</span>
+          <h3 class="font-bold text-primary text-lg mb-2">Transformer Manufacturing Launched</h3>
+          <p class="text-gray-600 text-sm">Expanded into custom transformer manufacturing — distribution, power, and specialty transformers — becoming a regional leader in electrical products.</p>
+        </div>
+      </div>
+      <div class="timeline-item left fade-up stagger-3">
+        <div class="timeline-dot"></div>
+        <div class="bg-gray-50 rounded-xl p-6 border border-gray-100 shadow-sm">
+          <span class="text-accent font-black text-2xl font-heading block mb-2">2010</span>
+          <h3 class="font-bold text-primary text-lg mb-2">Industrial Division Opened</h3>
+          <p class="text-gray-600 text-sm">Launched the industrial division offering complete PLC/VFD control panels, custom switchgear, and end-to-end industrial electrical solutions.</p>
+        </div>
+      </div>
+      <div class="timeline-item right fade-up stagger-4">
+        <div class="timeline-dot"></div>
+        <div class="bg-gray-50 rounded-xl p-6 border border-gray-100 shadow-sm">
+          <span class="text-accent font-black text-2xl font-heading block mb-2">2018</span>
+          <h3 class="font-bold text-primary text-lg mb-2">500+ Projects Milestone</h3>
+          <p class="text-gray-600 text-sm">Celebrated delivering over 500 successful projects across residential, commercial, and industrial sectors — a testament to our team's dedication.</p>
+        </div>
+      </div>
+      <div class="timeline-item left fade-up stagger-5">
+        <div class="timeline-dot"></div>
+        <div class="bg-gray-50 rounded-xl p-6 border border-gray-100 shadow-sm">
+          <span class="text-accent font-black text-2xl font-heading block mb-2">2024+</span>
+          <h3 class="font-bold text-primary text-lg mb-2">Continued Growth & Innovation</h3>
+          <p class="text-gray-600 text-sm">Expanding product lines, embracing smart electrical systems, and continuing to deliver excellence with every project we undertake.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="orange-banner py-20 text-white">
+  <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+    <h2 class="font-heading font-black text-4xl mb-5 fade-up">Ready to Work With Us?</h2>
+    <p class="text-white/85 text-lg mb-8 fade-up stagger-1">Join hundreds of satisfied clients who trust Alpha9Electric for all their electrical needs.</p>
+    <a href="contact.html" class="inline-flex items-center gap-2 bg-white text-accent font-bold px-8 py-4 rounded-full hover:-translate-y-1 transition-all duration-300 shadow-lg fade-up stagger-2">
+      <i data-lucide="send" class="w-5 h-5"></i> Contact Us Today
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer pt-16 pb-8">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+      <div class="lg:col-span-1">
+        <!-- <img src="images/logo.png" alt="Alpha9Electric Logo" class="h-12 footer-logo mb-5 object-contain" /> -->
+        <p class="text-white/60 text-sm leading-relaxed mb-6">Alpha9Electric — Power product manufacturer and system solution provider with 30+ years of excellence.</p>
+      </div>
+      <div>
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="space-y-2.5">
+          <li><a href="index.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Home</a></li>
+          <li><a href="about.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>About Us</a></li>
+          <li><a href="products.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Products</a></li>
+          <li><a href="services.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Services</a></li>
+          <li><a href="projects.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Projects</a></li>
+          <li><a href="contact.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-heading">Our Services</h4>
+        <ul class="space-y-2.5">
+          <li><a href="services.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Residential Wiring</a></li>
+          <li><a href="services.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Commercial Electrical</a></li>
+          <li><a href="services.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Industrial Installations</a></li>
+          <li><a href="services.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Maintenance & Repairs</a></li>
+          <li><a href="services.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>CCTV & Security</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-heading">Contact</h4>
+        <ul class="space-y-4">
+          <li class="flex items-start gap-3 text-sm text-white/70"><i data-lucide="map-pin" class="w-4 h-4 text-accent mt-0.5"></i>937 Gallaher Rd, Kingston TN</li>
+          <li><a href="tel:8652900218" class="flex items-center gap-3 text-sm footer-link"><i data-lucide="phone" class="w-4 h-4 text-accent"></i>(865) 290-0218</a></li>
+          <li><a href="mailto:info@alph9electric.com" class="flex items-center gap-3 text-sm footer-link"><i data-lucide="mail" class="w-4 h-4 text-accent"></i>info@alph9electric.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-white/40">
+      <p>© 2025 Alpha9Electric. All rights reserved.</p>
+      <p>Power Product Manufacturing & System Solutions</p>
+    </div>
+  </div>
+</footer>
+
+<button id="back-to-top"><i data-lucide="chevron-up" class="w-5 h-5"></i></button>
+<script>lucide.createIcons();</script>
+<script src="script.js"></script>
+</body>
+</html>

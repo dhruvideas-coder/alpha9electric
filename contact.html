@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Alpha9Electric</title>
+  <meta name="description" content="Contact Alpha9Electric for electrical services, product inquiries, and free quotes. Call (865) 290-0218 or visit us at 937 Gallaher Rd, Kingston TN." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: { DEFAULT: '#181f6f', dark: '#0f1550', light: '#2d3a9e' },
+            accent: { DEFAULT: '#f1620f', light: '#ff7a2e', dark: '#c44d00' }
+          },
+          fontFamily: { sans: ['Inter', 'sans-serif'], heading: ['Poppins', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+<body>
+<div id="scroll-progress"></div>
+
+<!-- TOP BAR -->
+<div class="top-bar hidden md:block">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between">
+    <div class="flex items-center gap-6">
+      <a href="tel:8652900218" class="flex items-center gap-2 hover:text-accent transition-colors"><i data-lucide="phone" class="w-3.5 h-3.5"></i>(865) 290-0218</a>
+      <a href="mailto:info@alph9electric.com" class="flex items-center gap-2 hover:text-accent transition-colors"><i data-lucide="mail" class="w-3.5 h-3.5"></i>info@alph9electric.com</a>
+    </div>
+    <span class="flex items-center gap-1.5 text-green-400 font-medium"><i data-lucide="shield-check" class="w-3.5 h-3.5"></i>100% Satisfaction Guaranteed</span>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav id="navbar" class="py-4 scrolled" style="background:white;box-shadow:0 2px 20px rgba(0,0,0,.1);">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between">
+    <a href="index.html"><img src="images/logo.png" alt="Alpha9Electric Logo" class="h-12 w-auto object-contain" style="filter:none" /></a>
+    <div class="hidden lg:flex items-center gap-8">
+      <a href="index.html" class="nav-link text-gray-800 text-sm font-medium">Home</a>
+      <a href="about.html" class="nav-link text-gray-800 text-sm font-medium">About Us</a>
+      <a href="products.html" class="nav-link text-gray-800 text-sm font-medium">Products & Solutions</a>
+      <a href="services.html" class="nav-link text-gray-800 text-sm font-medium">Services</a>
+      <a href="service-areas.html" class="nav-link text-gray-800 text-sm font-medium">Service Areas</a>
+      <a href="projects.html" class="nav-link text-gray-800 text-sm font-medium">Projects</a>
+      <a href="blog.html" class="nav-link text-gray-800 text-sm font-medium">Blog</a>
+      <a href="contact.html" class="btn-primary text-sm py-2.5 px-5"><i data-lucide="phone" class="w-4 h-4"></i> Contact Us</a>
+    </div>
+    <button id="menu-btn" class="lg:hidden text-primary p-2"><i data-lucide="menu" class="w-6 h-6"></i></button>
+  </div>
+</nav>
+<div id="mobile-menu">
+  <button id="menu-close" class="absolute top-6 right-6 text-white"><i data-lucide="x" class="w-8 h-8"></i></button>
+  <a href="index.html" class="mobile-nav-link">Home</a>
+  <a href="about.html" class="mobile-nav-link">About Us</a>
+  <a href="products.html" class="mobile-nav-link">Products & Solutions</a>
+  <a href="services.html" class="mobile-nav-link">Services</a>
+  <a href="service-areas.html" class="mobile-nav-link">Service Areas</a>
+  <a href="projects.html" class="mobile-nav-link">Projects</a>
+  <a href="blog.html" class="mobile-nav-link">Blog</a>
+  <a href="contact.html" class="mobile-nav-link">Contact</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="max-w-7xl mx-auto px-4 text-center text-white relative z-10">
+    <!-- <nav class="flex items-center justify-center gap-2 text-sm text-white/60 mb-6">
+      <a href="index.html" class="hover:text-white transition-colors">Home</a>
+      <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+      <span class="text-white">Contact</span>
+    </nav> -->
+    <span class="section-eyebrow text-orange-300 fade-up">Reach Out</span>
+    <h1 class="font-heading font-black text-4xl lg:text-6xl text-white mt-2 mb-4 fade-up stagger-1">Contact Alpha9Electric</h1>
+    <p class="text-white/75 text-lg max-w-2xl mx-auto fade-up stagger-2">Ready to discuss your project? Our team is here to help with free estimates, product inquiries, and expert advice.</p>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="py-24 bg-gray-50 bg-pattern">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+
+      <!-- Contact Info Panel -->
+      <div class="space-y-6 fade-up">
+        <div>
+          <span class="section-eyebrow">Get In Touch</span>
+          <h2 class="section-title text-2xl">We'd Love to Hear From You</h2>
+          <div class="accent-divider"></div>
+          <p class="text-gray-600 text-sm leading-relaxed mt-4">Whether you need a free quote, product information, or just have a question — our team is ready to help. Expect a response within one business day.</p>
+        </div>
+
+        <!-- Contact Details -->
+        <div class="space-y-4">
+          <a href="tel:8652900218" class="trust-badge group hover:border-accent hover:shadow-orange">
+            <div class="w-12 h-12 rounded-xl bg-accent flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+              <i data-lucide="phone" class="w-5 h-5 text-white"></i>
+            </div>
+            <div>
+              <p class="text-xs font-bold text-gray-500 uppercase tracking-wider">Call Us</p>
+              <p class="font-bold text-primary text-lg">(865) 290-0218</p>
+              <p class="text-xs text-gray-400">Mon–Fri 8am–6pm | 24/7 Emergency</p>
+            </div>
+          </a>
+
+          <a href="mailto:info@alph9electric.com" class="trust-badge group hover:border-accent hover:shadow-orange">
+            <div class="w-12 h-12 rounded-xl bg-primary flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+              <i data-lucide="mail" class="w-5 h-5 text-white"></i>
+            </div>
+            <div>
+              <p class="text-xs font-bold text-gray-500 uppercase tracking-wider">Email Us</p>
+              <p class="font-bold text-primary">info@alph9electric.com</p>
+              <p class="text-xs text-gray-400">We reply within 24 hours</p>
+            </div>
+          </a>
+
+          <div class="trust-badge">
+            <div class="w-12 h-12 rounded-xl bg-gray-100 flex items-center justify-center flex-shrink-0">
+              <i data-lucide="map-pin" class="w-5 h-5 text-accent"></i>
+            </div>
+            <div>
+              <p class="text-xs font-bold text-gray-500 uppercase tracking-wider">Visit Us</p>
+              <p class="font-bold text-primary">937 Gallaher Rd</p>
+              <p class="text-sm text-gray-500">Kingston, TN</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hours -->
+        <div class="bg-primary rounded-2xl p-6 text-white">
+          <h3 class="font-bold mb-4 flex items-center gap-2"><i data-lucide="clock" class="w-5 h-5 text-accent"></i> Business Hours</h3>
+          <ul class="space-y-2.5 text-sm">
+            <li class="flex justify-between"><span class="text-white/70">Monday – Friday</span><span class="font-semibold">8:00 AM – 6:00 PM</span></li>
+            <li class="flex justify-between"><span class="text-white/70">Saturday</span><span class="font-semibold">9:00 AM – 3:00 PM</span></li>
+            <li class="flex justify-between"><span class="text-white/70">Sunday</span><span class="font-semibold text-white/50">Closed</span></li>
+            <li class="pt-2 border-t border-white/15 flex items-center gap-2 text-accent font-semibold">
+              <i data-lucide="alert-circle" class="w-4 h-4"></i> 24/7 Emergency Service Available
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="lg:col-span-2 fade-up stagger-2">
+        <div class="bg-white rounded-2xl shadow-xl p-10 border border-gray-100">
+          <h2 class="font-heading font-bold text-2xl text-primary mb-2">Send Us a Message</h2>
+          <p class="text-gray-500 text-sm mb-8">Fill in the form below and we'll get back to you with a personalized response and free estimate.</p>
+
+          <form id="contact-form" novalidate>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              <div>
+                <label for="name" class="block text-sm font-semibold text-gray-700 mb-2">Full Name <span class="text-red-500">*</span></label>
+                <input type="text" id="name" name="name" placeholder="John Smith" class="contact-input" />
+                <p class="input-error-msg">Please enter your name (at least 2 characters)</p>
+              </div>
+              <div>
+                <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">Email Address <span class="text-red-500">*</span></label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" class="contact-input" />
+                <p class="input-error-msg">Please enter a valid email address</p>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              <div>
+                <label for="phone" class="block text-sm font-semibold text-gray-700 mb-2">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="(865) 000-0000" class="contact-input" />
+                <p class="input-error-msg">Please enter a valid phone number</p>
+              </div>
+              <div>
+                <label for="service" class="block text-sm font-semibold text-gray-700 mb-2">Service Interested In</label>
+                <select id="service" name="service" class="contact-input">
+                  <option value="">Select a service...</option>
+                  <option>Residential Wiring</option>
+                  <option>Commercial Electrical</option>
+                  <option>Industrial Installation</option>
+                  <option>Transformers / Products</option>
+                  <option>Control Panels</option>
+                  <option>CCTV & Security</option>
+                  <option>Maintenance & Repairs</option>
+                  <option>Emergency Service</option>
+                  <option>Custom Engineering</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="mb-6">
+              <label for="message" class="block text-sm font-semibold text-gray-700 mb-2">Your Message <span class="text-red-500">*</span></label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell us about your project, property type, timeline, and any specific requirements..." class="contact-input resize-none"></textarea>
+              <p class="input-error-msg">Please enter your message (at least 10 characters)</p>
+            </div>
+
+            <div class="flex items-start gap-3 mb-8">
+              <input type="checkbox" id="agree" class="mt-1 w-4 h-4 text-accent rounded cursor-pointer" />
+              <label for="agree" class="text-sm text-gray-600 cursor-pointer">I agree that Alpha9Electric may contact me regarding my inquiry. I understand my information will be treated with respect and confidentiality.</label>
+            </div>
+
+            <button type="submit" class="btn-primary w-full justify-center text-base py-4">
+              <i data-lucide="send" class="w-5 h-5"></i>
+              Send Message & Get Free Quote
+            </button>
+          </form>
+
+          <!-- Success Message -->
+          <div id="form-success" class="hidden flex-col items-center justify-center text-center py-12">
+            <div class="w-20 h-20 rounded-full bg-green-100 flex items-center justify-center mx-auto mb-6">
+              <i data-lucide="check-circle" class="w-10 h-10 text-green-600"></i>
+            </div>
+            <h3 class="font-heading font-bold text-2xl text-gray-900 mb-3">Message Sent!</h3>
+            <p class="text-gray-600 mb-2">Thank you for reaching out to Alpha9Electric.</p>
+            <p class="text-gray-500 text-sm">Our team will review your message and get back to you within one business day. For urgent needs, please call us at <a href="tel:8652900218" class="text-accent font-semibold">(865) 290-0218</a>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MAP -->
+<section class="h-72 md:h-96 bg-gray-200 relative overflow-hidden">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.0!2d-84.5138!3d35.8805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s937+Gallaher+Rd%2C+Kingston%2C+TN!5e0!3m2!1sen!2sus!4v1"
+    class="w-full h-full border-0"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+    title="Alpha9Electric Location">
+  </iframe>
+</section>
+
+<!-- FAQ SECTION -->
+<section class="py-24 bg-white">
+  <div class="max-w-4xl mx-auto px-4">
+    <div class="text-center mb-16">
+      <span class="section-eyebrow fade-up">Common Questions</span>
+      <h2 class="section-title fade-up stagger-1">Frequently Asked Questions</h2>
+      <div class="accent-divider center fade-up stagger-2"></div>
+    </div>
+    <div class="space-y-5">
+      <details class="card p-6 group cursor-pointer fade-up stagger-1">
+        <summary class="flex items-center justify-between font-bold text-primary text-lg list-none">
+          Do you offer free estimates?
+          <i data-lucide="chevron-down" class="w-5 h-5 text-accent group-open:rotate-180 transition-transform flex-shrink-0"></i>
+        </summary>
+        <p class="text-gray-600 mt-4 text-sm leading-relaxed">Yes! Alpha9Electric provides free estimates for all projects. Simply contact us by phone or through our contact form and we'll schedule a consultation at your convenience.</p>
+      </details>
+      <details class="card p-6 group cursor-pointer fade-up stagger-2">
+        <summary class="flex items-center justify-between font-bold text-primary text-lg list-none">
+          Are you available for emergency electrical services?
+          <i data-lucide="chevron-down" class="w-5 h-5 text-accent group-open:rotate-180 transition-transform flex-shrink-0"></i>
+        </summary>
+        <p class="text-gray-600 mt-4 text-sm leading-relaxed">Absolutely. We offer 24/7 emergency electrical service. If you experience an electrical emergency, call us immediately at (865) 290-0218 and our on-call team will respond promptly.</p>
+      </details>
+      <details class="card p-6 group cursor-pointer fade-up stagger-3">
+        <summary class="flex items-center justify-between font-bold text-primary text-lg list-none">
+          Can you design custom electrical products for my specific application?
+          <i data-lucide="chevron-down" class="w-5 h-5 text-accent group-open:rotate-180 transition-transform flex-shrink-0"></i>
+        </summary>
+        <p class="text-gray-600 mt-4 text-sm leading-relaxed">Yes — custom engineering is one of our core strengths. We design and manufacture transformers, control panels, power supplies, and switchgear to exact client specifications. Contact us with your requirements and our engineers will create a solution.</p>
+      </details>
+      <details class="card p-6 group cursor-pointer fade-up stagger-4">
+        <summary class="flex items-center justify-between font-bold text-primary text-lg list-none">
+          What areas do you serve?
+          <i data-lucide="chevron-down" class="w-5 h-5 text-accent group-open:rotate-180 transition-transform flex-shrink-0"></i>
+        </summary>
+        <p class="text-gray-600 mt-4 text-sm leading-relaxed">We are based in Kingston, TN and serve the surrounding Tennessee region including Knoxville, Nashville, Chattanooga, Memphis, and Oak Ridge. Contact us for large-scale project coverage anywhere in the region.</p>
+      </details>
+      <details class="card p-6 group cursor-pointer fade-up stagger-5">
+        <summary class="flex items-center justify-between font-bold text-primary text-lg list-none">
+          Are your electricians licensed and insured?
+          <i data-lucide="chevron-down" class="w-5 h-5 text-accent group-open:rotate-180 transition-transform flex-shrink-0"></i>
+        </summary>
+        <p class="text-gray-600 mt-4 text-sm leading-relaxed">Yes. All Alpha9Electric technicians are fully licensed, bonded, and insured. We hold all required state electrical licenses and carry comprehensive liability and workers' compensation insurance for your complete protection.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer pt-16 pb-8">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+      <div>
+        <!-- <img src="images/logo.png" alt="Alpha9Electric Logo" class="h-12 footer-logo mb-5 object-contain" /> -->
+        <p class="text-white/60 text-sm leading-relaxed mb-6">Alpha9Electric — Power product manufacturer and system solution provider since 30+ years.</p>
+        <div class="flex gap-3">
+          <a href="#" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white/70 hover:bg-accent hover:text-white transition-all"><i data-lucide="facebook" class="w-4 h-4"></i></a>
+          <a href="#" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white/70 hover:bg-accent hover:text-white transition-all"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+          <a href="#" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white/70 hover:bg-accent hover:text-white transition-all"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
+        </div>
+      </div>
+      <div><h4 class="footer-heading">Quick Links</h4><ul class="space-y-2.5"><li><a href="index.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Home</a></li><li><a href="about.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>About Us</a></li><li><a href="products.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Products</a></li><li><a href="services.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Services</a></li><li><a href="projects.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Projects</a></li><li><a href="blog.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Blog</a></li></ul></div>
+      <div><h4 class="footer-heading">Services</h4><ul class="space-y-2.5"><li><a href="services.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Residential</a></li><li><a href="services.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Commercial</a></li><li><a href="services.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Industrial</a></li><li><a href="services.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>CCTV & Security</a></li><li><a href="services.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>24/7 Emergency</a></li></ul></div>
+      <div><h4 class="footer-heading">Contact</h4><ul class="space-y-4"><li class="flex items-start gap-3 text-sm text-white/70"><i data-lucide="map-pin" class="w-4 h-4 text-accent mt-0.5"></i>937 Gallaher Rd, Kingston TN</li><li><a href="tel:8652900218" class="flex items-center gap-3 text-sm footer-link"><i data-lucide="phone" class="w-4 h-4 text-accent"></i>(865) 290-0218</a></li><li><a href="mailto:info@alph9electric.com" class="flex items-center gap-3 text-sm footer-link"><i data-lucide="mail" class="w-4 h-4 text-accent"></i>info@alph9electric.com</a></li></ul><a href="contact.html" class="btn-primary mt-6 text-sm py-2.5 px-5 inline-flex"><i data-lucide="send" class="w-4 h-4"></i> Get a Free Quote</a></div>
+    </div>
+    <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-white/40">
+      <p>© 2025 Alpha9Electric. All rights reserved.</p><p>Power Product Manufacturing & System Solutions</p>
+    </div>
+  </div>
+</footer>
+
+<button id="back-to-top"><i data-lucide="chevron-up" class="w-5 h-5"></i></button>
+<script>lucide.createIcons();</script>
+<script src="script.js"></script>
+</body>
+</html>
