@@ -68,9 +68,6 @@ function initMobileMenu() {
   const closeBtn = document.getElementById('menu-close');
   const mobileMenu = document.getElementById('mobile-menu');
   const mobileLinks = document.querySelectorAll('.mobile-nav-link');
-  const navbar = document.getElementById('navbar');
-  const isTransparent = navbar?.hasAttribute('data-transparent');
-
   if (!menuBtn || !mobileMenu) return;
 
   // SVG icons for toggle
@@ -328,7 +325,7 @@ function initContactForm() {
 
       const formData = new FormData(form);
 
-      fetch('send-email.php', {
+      fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         body: formData
       })
