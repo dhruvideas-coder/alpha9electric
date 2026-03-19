@@ -491,6 +491,19 @@ body {
   box-shadow: var(--shadow-md);
   cursor: pointer;
   transition: var(--transition);
+  position: relative;
+}
+
+.project-card > img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+  transition: transform .5s ease;
+}
+
+.project-card:hover > img {
+  transform: scale(1.08);
 }
 
 .project-card:hover {
