@@ -1,0 +1,63 @@
+# ──────────────────────────────────────────────────────────────
+#  Alpha9Electric — Apache Security & Performance Config
+# ──────────────────────────────────────────────────────────────
+
+# ── Security Headers ─────────────────────────────────────────
+<IfModule mod_headers.c>
+    # Prevent MIME-type sniffing attacks
+    Header set X-Content-Type-Options "nosniff"
+
+    # Block clickjacking / iframe embedding from other origins
+    Header set X-Frame-Options "SAMEORIGIN"
+
+    # Control referrer info sent to external sites
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+
+    # Remove server version header
+    Header unset Server
+    Header unset X-Powered-By
+
+    # Basic XSS protection for older browsers
+    Header set X-XSS-Protection "1; mode=block"
+
+    # HSTS — enforce HTTPS for 1 year (enable only when SSL cert is active)
+    # Header set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+</IfModule>
+
+# ── Block access to sensitive files ──────────────────────────
+<FilesMatch "\.(env|log|json|md|git)$">
+    Require all denied
+</FilesMatch>
+
+# ── Performance: Browser Caching ─────────────────────────────
+<IfModule mod_expires.c>
+    ExpiresActive On
+
+    # Images — cache for 1 year
+    ExpiresByType image/jpeg  "access plus 1 year"
+    ExpiresByType image/png   "access plus 1 year"
+    ExpiresByType image/webp  "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/gif   "access plus 1 year"
+
+    # CSS & JS — cache for 1 month
+    ExpiresByType text/css                "access plus 1 month"
+    ExpiresByType application/javascript  "access plus 1 month"
+
+    # Fonts — cache for 1 year
+    ExpiresByType font/woff2  "access plus 1 year"
+    ExpiresByType font/woff   "access plus 1 year"
+
+    # HTML — short cache to allow updates to propagate
+    ExpiresByType text/html   "access plus 1 hour"
+</IfModule>
+
+# ── Performance: Gzip Compression ────────────────────────────
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json text/plain image/svg+xml
+</IfModule>
+
+# ── Performance: Keep-Alive connections ──────────────────────
+<IfModule mod_headers.c>
+    Header set Connection keep-alive
+</IfModule>

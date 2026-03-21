@@ -272,9 +272,13 @@ function populateModal(data) {
   document.getElementById('modal-desc').textContent = data.description;
   const tagContainer = document.getElementById('modal-tags');
   if (tagContainer && data.tags) {
-    tagContainer.innerHTML = data.tags.map(t =>
-      `<span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-50 text-blue-800">${t}</span>`
-    ).join('');
+    tagContainer.innerHTML = '';
+    data.tags.forEach(t => {
+      const span = document.createElement('span');
+      span.className = 'inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-50 text-blue-800';
+      span.textContent = t; // textContent prevents XSS
+      tagContainer.appendChild(span);
+    });
   }
 }
 
@@ -297,10 +301,11 @@ function initContactForm() {
     });
 
     // Validate each field
-    const name = form.querySelector('#name');
-    const email = form.querySelector('#email');
-    const phone = form.querySelector('#phone');
+    const name    = form.querySelector('#name');
+    const email   = form.querySelector('#email');
+    const phone   = form.querySelector('#phone');
     const message = form.querySelector('#message');
+    const agree   = form.querySelector('#agree');
 
     if (!name?.value.trim() || name.value.trim().length < 2) {
       name?.classList.add('error'); valid = false;
@@ -313,6 +318,12 @@ function initContactForm() {
     }
     if (!message?.value.trim() || message.value.trim().length < 10) {
       message?.classList.add('error'); valid = false;
+    }
+    if (agree && !agree.checked) {
+      agree.closest('div')?.classList.add('opacity-60');
+      valid = false;
+    } else {
+      agree?.closest('div')?.classList.remove('opacity-60');
     }
 
     if (valid) {
