@@ -314,7 +314,7 @@
      HERO SECTION
      ============================================================ -->
   <section class="hero-section">
-    <img src="images/hero.jpg" alt="Industrial electrical solutions" class="hero-bg" loading="eager" />
+    <picture><source srcset="images/hero.webp" type="image/webp" /><img src="images/hero.jpg" alt="Industrial electrical solutions" class="hero-bg" loading="eager" fetchpriority="high" /></picture>
     <div class="hero-content max-w-7xl mx-auto px-4 pt-32 pb-16 w-full text-center md:text-left">
       <div class="max-w-2xl mx-auto md:mx-0">
         <div class="hero-badge fade-up flex justify-center md:inline-flex mx-auto md:mx-0 w-fit">
@@ -786,10 +786,8 @@
         <!-- Image collage -->
         <div class="relative fade-in">
           <div class="grid grid-cols-2 gap-4">
-            <img src="images/electrical_engineer.jpg" alt="Electrical engineer at work"
-              class="rounded-xl col-span-2 w-full h-60 object-cover shadow-lg" loading="lazy" />
-            <img src="images/ic-board.jpg" alt="Circuit board manufacturing"
-              class="rounded-xl w-full h-40 object-cover shadow-lg" loading="lazy" />
+            <picture class="col-span-2"><source srcset="images/electrical_engineer.webp" type="image/webp" /><img src="images/electrical_engineer.jpg" alt="Electrical engineer at work" class="rounded-xl w-full h-60 object-cover shadow-lg" loading="lazy" /></picture>
+            <picture><source srcset="images/ic-board.webp" type="image/webp" /><img src="images/ic-board.jpg" alt="Circuit board manufacturing" class="rounded-xl w-full h-40 object-cover shadow-lg" loading="lazy" /></picture>
             <img src="images/industrial power_grid upgrade.jpg" alt="Power plant"
               class="rounded-xl w-full h-40 object-cover shadow-lg" loading="lazy" />
           </div>
@@ -886,7 +884,7 @@
 
         <div class="project-card fade-up stagger-2">
           <div class="project-img-wrap">
-            <img src="images/residential.jpg" alt="Residential Complex Wiring" loading="lazy" />
+            <picture><source srcset="images/residential.webp" type="image/webp" /><img src="images/residential.jpg" alt="Residential Complex Wiring" loading="lazy" /></picture>
             <div class="project-overlay">
               <div class="text-white">
                 <p class="text-accent font-bold text-xs tracking-widest uppercase mb-1">Residential</p>
@@ -905,7 +903,7 @@
 
         <div class="project-card fade-up stagger-3">
           <div class="project-img-wrap">
-            <img src="images/commercial.jpg" alt="Commercial Office Building" loading="lazy" />
+            <picture><source srcset="images/commercial.webp" type="image/webp" /><img src="images/commercial.jpg" alt="Commercial Office Building" loading="lazy" /></picture>
             <div class="project-overlay">
               <div class="text-white">
                 <p class="text-accent font-bold text-xs tracking-widest uppercase mb-1">Commercial</p>
@@ -1221,8 +1219,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-2">
           <!-- Left: Image -->
           <div class="relative h-72 lg:h-auto">
-            <img src="images/electrician.jpg" alt="Electrician at work" class="w-full h-full object-cover"
-              loading="lazy" />
+            <picture><source srcset="images/electrician.webp" type="image/webp" /><img src="images/electrician.jpg" alt="Electrician at work" class="w-full h-full object-cover" loading="lazy" /></picture>
             <div class="absolute inset-0 bg-gradient-to-r from-primary/60 to-primary/20"></div>
           </div>
 
