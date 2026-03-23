@@ -67,6 +67,7 @@
     }
   </script>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 
   <!-- Extra style for lightbox -->
@@ -95,11 +96,98 @@
 <!-- NAVBAR -->
 <nav id="navbar" class="py-4 scrolled" style="background:white;box-shadow:0 2px 20px rgba(0,0,0,.1);">
   <div class="max-w-7xl mx-auto px-4 flex items-center justify-between">
-    <a href="index.html"><img src="images/logo.png" alt="Alpha9Electric Logo" class="h-12 w-auto object-contain" style="filter:none" /></a>
+    <a href="index.html"><img src="images/logo.png" alt="Alpha9Electric Logo" class="nav-logo-img w-auto object-contain" style="filter:none" /></a>
     <div class="hidden lg:flex items-center gap-8">
       <a href="index.html" class="nav-link text-gray-800 text-sm font-medium">Home</a>
       <a href="about.html" class="nav-link text-gray-800 text-sm font-medium">About Us</a>
-      <a href="services.html" class="nav-link text-gray-800 text-sm font-medium">Services</a>
+      <div class="nav-services-wrapper">
+        <a href="services.html" class="nav-link nav-services-trigger text-gray-800 text-sm font-medium flex items-center gap-1">
+          Services <i data-lucide="chevron-down" class="w-3.5 h-3.5 nav-chevron"></i>
+        </a>
+        <div class="nav-mega-menu">
+          <div class="nav-mega-header">
+            <div class="nav-mega-header-left">
+              <div class="nav-mega-header-icon">
+                <i data-lucide="zap" class="w-5 h-5" style="color:#ffa070"></i>
+              </div>
+              <div class="nav-mega-header-text">
+                <strong>Electrical Services</strong>
+                <span>Licensed &amp; Professional</span>
+              </div>
+            </div>
+            <span class="nav-mega-header-badge">
+              <i data-lucide="clock" class="w-3 h-3"></i>
+              24/7 Emergency
+            </span>
+          </div>
+          <div class="nav-mega-inner">
+            <div class="nav-mega-col">
+              <div class="nav-mega-cat-header">
+                <div class="nav-mega-cat-icon" style="background:var(--primary)"><i data-lucide="home" class="w-4 h-4 text-white"></i></div>
+                <span class="nav-mega-cat-title">Residential</span>
+              </div>
+              <ul class="nav-mega-list">
+                <li><a href="services.html">New Construction Wiring</a></li>
+                <li><a href="services.html">Panel Upgrades &amp; Rewiring</a></li>
+                <li><a href="services.html">Lighting Installation</a></li>
+                <li><a href="services.html">Wiring Upgrades &amp; Repairs</a></li>
+                <li><a href="services.html">Circuit Breaker Services</a></li>
+                <li><a href="services.html">Ceiling Fan Installation</a></li>
+              </ul>
+            </div>
+            <div class="nav-mega-col">
+              <div class="nav-mega-cat-header">
+                <div class="nav-mega-cat-icon" style="background:var(--accent)"><i data-lucide="building-2" class="w-4 h-4 text-white"></i></div>
+                <span class="nav-mega-cat-title">Commercial</span>
+              </div>
+              <ul class="nav-mega-list">
+                <li><a href="services.html">Commercial Wiring</a></li>
+                <li><a href="services.html">Lighting Solutions</a></li>
+                <li><a href="services.html">Generator Installation</a></li>
+                <li><a href="services.html">Surge Protection</a></li>
+                <li><a href="services.html">AC System Wiring</a></li>
+                <li><a href="services.html">Cable/Phone Line Install</a></li>
+              </ul>
+            </div>
+            <div class="nav-mega-col">
+              <div class="nav-mega-cat-header">
+                <div class="nav-mega-cat-icon" style="background:var(--primary)"><i data-lucide="factory" class="w-4 h-4 text-white"></i></div>
+                <span class="nav-mega-cat-title">Industrial</span>
+              </div>
+              <ul class="nav-mega-list">
+                <li><a href="services.html">Industrial Wiring &amp; Controls</a></li>
+                <li><a href="services.html">Motor Control Centers</a></li>
+                <li><a href="services.html">PLC &amp; Automation</a></li>
+                <li><a href="services.html">High-Voltage Installations</a></li>
+                <li><a href="services.html">Electrical Retrofitting</a></li>
+              </ul>
+            </div>
+            <div class="nav-mega-col">
+              <div class="nav-mega-cat-header">
+                <div class="nav-mega-cat-icon" style="background:var(--accent)"><i data-lucide="camera" class="w-4 h-4 text-white"></i></div>
+                <span class="nav-mega-cat-title">CCTV &amp; Security</span>
+              </div>
+              <ul class="nav-mega-list">
+                <li><a href="services.html">CCTV Camera Installation</a></li>
+                <li><a href="services.html">Access Control Systems</a></li>
+                <li><a href="services.html">Alarm System Integration</a></li>
+                <li><a href="services.html">Network Cabling</a></li>
+                <li><a href="services.html">Remote Monitoring Setup</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="nav-mega-footer">
+            <a href="services.html" class="nav-mega-cta">
+              <i data-lucide="zap" class="w-4 h-4"></i>
+              View All Services
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+            <div class="nav-mega-footer-right">
+              <span class="nav-mega-cta-pill">25+ Years Experience</span>
+            </div>
+          </div>
+        </div>
+      </div>
       <a href="service-areas.html" class="nav-link text-gray-800 text-sm font-medium">Service Areas</a>
       <a href="projects.html" class="nav-link text-gray-800 text-sm font-medium active">Projects</a>
       <a href="blog.html" class="nav-link text-gray-800 text-sm font-medium">Blog</a>
@@ -112,7 +200,28 @@
   <button id="menu-close" class="absolute top-6 right-6 text-white"><i data-lucide="x" class="w-8 h-8"></i></button>
   <a href="index.html" class="mobile-nav-link">Home</a>
   <a href="about.html" class="mobile-nav-link">About Us</a>
-  <a href="services.html" class="mobile-nav-link">Services</a>
+  <div class="mobile-services-accordion" id="mobile-services-acc">
+    <button class="mobile-services-toggle" onclick="document.getElementById('mobile-services-acc').classList.toggle('open')">
+      Services <i data-lucide="chevron-down" class="w-5 h-5 mobile-services-chevron"></i>
+    </button>
+    <div class="mobile-services-sub">
+      <span class="mobile-services-cat">Residential</span>
+      <a href="services.html">New Construction Wiring</a>
+      <a href="services.html">Panel Upgrades &amp; Rewiring</a>
+      <a href="services.html">Lighting Installation</a>
+      <span class="mobile-services-cat">Commercial</span>
+      <a href="services.html">Commercial Wiring</a>
+      <a href="services.html">Generator Installation</a>
+      <a href="services.html">Surge Protection</a>
+      <span class="mobile-services-cat">Industrial</span>
+      <a href="services.html">Industrial Wiring &amp; Controls</a>
+      <a href="services.html">PLC &amp; Automation</a>
+      <span class="mobile-services-cat">CCTV &amp; Security</span>
+      <a href="services.html">CCTV Camera Installation</a>
+      <a href="services.html">Access Control Systems</a>
+      <a href="services.html" class="mobile-services-viewall">View All Services →</a>
+    </div>
+  </div>
   <a href="service-areas.html" class="mobile-nav-link">Service Areas</a>
   <a href="projects.html" class="mobile-nav-link">Projects</a>
   <a href="blog.html" class="mobile-nav-link">Blog</a>
@@ -152,140 +261,65 @@
     </div>
 
     <!-- Projects Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="projects-grid">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8" id="projects-grid">
 
-      <!-- Project 1 -->
-      <div class="project-card-wrapper fade-up stagger-1" data-category="industrial">
-        <div class="project-card" data-project='{"img":"https://images.unsplash.com/photo-1486325212027-8081e485255e?w=900&q=80&auto=format&fit=crop","title":"Industrial Power Grid Upgrade","category":"Industrial","location":"Memphis, TN","description":"Complete high-voltage switchgear replacement and power distribution upgrade for a large-scale manufacturing plant. Project included new 15KV switchgear, transformer installation, and complete rewiring of the production floor.","tags":["Switchgear","HV Installation","Manufacturing"]}'>
-          <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=700&q=80&auto=format&fit=crop" alt="Industrial Power Grid Upgrade" loading="lazy" />
+      <!-- Project 1: Starbucks Alcoa, TN -->
+      <div class="project-card-wrapper fade-up stagger-1" data-category="commercial">
+        <div class="project-card" data-project='{"img":"images/commercial.jpg","title":"Starbucks — Alcoa, TN","category":"Commercial","location":"Alcoa, TN","description":"Alpha9 Electric completed the full commercial electrical installation for a new Starbucks store in Alcoa, Tennessee. The project included a 600-amp, 3-phase service, complete site lighting, and installation of a lighting control panel, pole lights, and wiring for illuminated exterior signage. Our team provided complete interior and exterior lighting systems, dedicated circuits for multiple HVAC units, and coordinated all inspections to ensure code compliance. All electrical work was completed to NEC standards, providing safe, efficient, and reliable power for the new retail space.","tags":["600-Amp 3-Phase Service","Site Lighting","Lighting Control Panel","Exterior Signage","HVAC Circuits","NEC Compliant"]}'>
+          <img src="images/commercial.jpg" alt="Starbucks Commercial Electrical Installation — Alcoa, TN" loading="lazy" />
           <div class="project-overlay">
-            <div class="text-white"><p class="text-accent font-bold text-xs tracking-widest uppercase mb-1">Industrial</p><h3 class="font-bold text-xl">Industrial Power Grid Upgrade</h3><p class="text-white/80 text-sm mt-1">Click to view details</p></div>
-          </div>
-        </div>
-        <div class="project-card-info">
-          <p class="project-category"><i data-lucide="tag" class="w-3.5 h-3.5"></i> Industrial</p>
-          <h3 class="font-bold text-gray-900">Industrial Power Grid Upgrade</h3>
-          <p class="text-sm text-gray-500 mt-1">Memphis, TN</p>
-        </div>
-      </div>
-
-      <!-- Project 2 -->
-      <div class="project-card-wrapper fade-up stagger-2" data-category="residential">
-        <div class="project-card" data-project='{"img":"https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=900&q=80&auto=format&fit=crop","title":"Modern Residential Complex","category":"Residential","location":"Kingston, TN","description":"Complete electrical installation for a 120-unit modern residential development. Work included full wiring, panel installations, lighting design, and smart home integration for each unit.","tags":["Residential Wiring","Panel Install","Smart Home"]}'>
-          <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=700&q=80&auto=format&fit=crop" alt="Modern Residential Complex" loading="lazy" />
-          <div class="project-overlay">
-            <div class="text-white"><p class="text-accent font-bold text-xs tracking-widest uppercase mb-1">Residential</p><h3 class="font-bold text-xl">Modern Residential Complex</h3><p class="text-white/80 text-sm mt-1">Click to view details</p></div>
-          </div>
-        </div>
-        <div class="project-card-info">
-          <p class="project-category"><i data-lucide="tag" class="w-3.5 h-3.5"></i> Residential</p>
-          <h3 class="font-bold text-gray-900">Modern Residential Complex</h3>
-          <p class="text-sm text-gray-500 mt-1">Kingston, TN</p>
-        </div>
-      </div>
-
-      <!-- Project 3 -->
-      <div class="project-card-wrapper fade-up stagger-3" data-category="commercial">
-        <div class="project-card" data-project='{"img":"https://images.unsplash.com/photo-1497366216548-37526070297c?w=900&q=80&auto=format&fit=crop","title":"Office Tower Electrical Systems","category":"Commercial","location":"Nashville, TN","description":"Full electrical design and installation for a 12-story office tower. Included main switchgear, UPS systems, emergency power, lighting controls, and complete building management system integration.","tags":["Commercial","High-Rise","Switchgear","UPS"]}'>
-          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&q=80&auto=format&fit=crop" alt="Office Tower Electrical Systems" loading="lazy" />
-          <div class="project-overlay">
-            <div class="text-white"><p class="text-accent font-bold text-xs tracking-widest uppercase mb-1">Commercial</p><h3 class="font-bold text-xl">Office Tower Electrical Systems</h3><p class="text-white/80 text-sm mt-1">Click to view details</p></div>
+            <div class="text-white"><p class="text-accent font-bold text-xs tracking-widest uppercase mb-1">Commercial</p><h3 class="font-bold text-xl">Starbucks — Alcoa, TN</h3><p class="text-white/80 text-sm mt-1">Click to view details</p></div>
           </div>
         </div>
         <div class="project-card-info">
           <p class="project-category"><i data-lucide="tag" class="w-3.5 h-3.5"></i> Commercial</p>
-          <h3 class="font-bold text-gray-900">Office Tower Electrical Systems</h3>
-          <p class="text-sm text-gray-500 mt-1">Nashville, TN</p>
+          <h3 class="font-bold text-gray-900">Starbucks — Alcoa, TN</h3>
+          <p class="text-sm text-gray-500 mt-1">600-Amp 3-Phase Service &amp; Full Site Lighting</p>
         </div>
       </div>
 
-      <!-- Project 4 -->
-      <div class="project-card-wrapper fade-up stagger-4" data-category="industrial">
-        <div class="project-card" data-project='{"img":"https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=900&q=80&auto=format&fit=crop","title":"Manufacturing Plant PLC System","category":"Industrial","location":"Knoxville, TN","description":"Design and installation of a comprehensive PLC-based automation and control system for a large manufacturing facility. Project involved 8 control cabinets, SCADA integration, and VFD motor controls.","tags":["PLC","SCADA","Automation","VFD"]}'>
-          <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=700&q=80&auto=format&fit=crop" alt="Manufacturing Plant PLC System" loading="lazy" />
-          <div class="project-overlay">
-            <div class="text-white"><p class="text-accent font-bold text-xs tracking-widest uppercase mb-1">Industrial</p><h3 class="font-bold text-xl">Manufacturing Plant PLC System</h3><p class="text-white/80 text-sm mt-1">Click to view details</p></div>
-          </div>
-        </div>
-        <div class="project-card-info">
-          <p class="project-category"><i data-lucide="tag" class="w-3.5 h-3.5"></i> Industrial</p>
-          <h3 class="font-bold text-gray-900">Manufacturing Plant PLC System</h3>
-          <p class="text-sm text-gray-500 mt-1">Knoxville, TN</p>
-        </div>
-      </div>
-
-      <!-- Project 5 -->
-      <div class="project-card-wrapper fade-up stagger-5" data-category="commercial">
-        <div class="project-card" data-project='{"img":"https://images.unsplash.com/photo-1518770660439-4636190af475?w=900&q=80&auto=format&fit=crop","title":"Retail Shopping Center Wiring","category":"Commercial","location":"Chattanooga, TN","description":"Complete electrical installation for a 200,000 sq ft retail shopping complex. Included main distribution boards, emergency power systems, exterior LED lighting, and CCTV infrastructure.","tags":["Commercial","LED Lighting","CCTV","Distribution"]}'>
-          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=700&q=80&auto=format&fit=crop" alt="Retail Shopping Center Wiring" loading="lazy" />
-          <div class="project-overlay">
-            <div class="text-white"><p class="text-accent font-bold text-xs tracking-widest uppercase mb-1">Commercial</p><h3 class="font-bold text-xl">Retail Shopping Center Wiring</h3><p class="text-white/80 text-sm mt-1">Click to view details</p></div>
-          </div>
-        </div>
-        <div class="project-card-info">
-          <p class="project-category"><i data-lucide="tag" class="w-3.5 h-3.5"></i> Commercial</p>
-          <h3 class="font-bold text-gray-900">Retail Shopping Center Wiring</h3>
-          <p class="text-sm text-gray-500 mt-1">Chattanooga, TN</p>
-        </div>
-      </div>
-
-      <!-- Project 6 -->
-      <div class="project-card-wrapper fade-up stagger-6" data-category="residential">
-        <div class="project-card" data-project='{"img":"https://images.unsplash.com/photo-1549517045-bc93de075e53?w=900&q=80&auto=format&fit=crop","title":"Luxury Home Smart System","category":"Residential","location":"Kingston, TN","description":"Full smart home electrical integration for a 6,500 sq ft luxury residence. Installed whole-home automation, LED lighting controls, EV charger, generator backup, and advanced security system.","tags":["Smart Home","EV Charger","Generator","Automation"]}'>
-          <img src="https://images.unsplash.com/photo-1549517045-bc93de075e53?w=700&q=80&auto=format&fit=crop" alt="Luxury Home Smart System" loading="lazy" />
-          <div class="project-overlay">
-            <div class="text-white"><p class="text-accent font-bold text-xs tracking-widest uppercase mb-1">Residential</p><h3 class="font-bold text-xl">Luxury Home Smart System</h3><p class="text-white/80 text-sm mt-1">Click to view details</p></div>
-          </div>
-        </div>
-        <div class="project-card-info">
-          <p class="project-category"><i data-lucide="tag" class="w-3.5 h-3.5"></i> Residential</p>
-          <h3 class="font-bold text-gray-900">Luxury Home Smart System</h3>
-          <p class="text-sm text-gray-500 mt-1">Kingston, TN</p>
-        </div>
-      </div>
-
-      <!-- Project 7 -->
-      <div class="project-card-wrapper fade-up stagger-1" data-category="industrial">
-        <div class="project-card" data-project='{"img":"https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=900&q=80&auto=format&fit=crop","title":"Substation Transformer Install","category":"Industrial","location":"Oak Ridge, TN","description":"Design, manufacture, and installation of a custom 15MVA power transformer for a utility substation upgrade. Project included civil works, foundation, cabling, and commissioning.","tags":["Power Transformer","Substation","HV Engineering"]}'>
-          <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=700&q=80&auto=format&fit=crop" alt="Substation Transformer Install" loading="lazy" />
-          <div class="project-overlay">
-            <div class="text-white"><p class="text-accent font-bold text-xs tracking-widest uppercase mb-1">Industrial</p><h3 class="font-bold text-xl">Substation Transformer Install</h3><p class="text-white/80 text-sm mt-1">Click to view details</p></div>
-          </div>
-        </div>
-        <div class="project-card-info">
-          <p class="project-category"><i data-lucide="tag" class="w-3.5 h-3.5"></i> Industrial</p>
-          <h3 class="font-bold text-gray-900">Substation Transformer Install</h3>
-          <p class="text-sm text-gray-500 mt-1">Oak Ridge, TN</p>
-        </div>
-      </div>
-
-      <!-- Project 8 -->
+      <!-- Project 2: Eagle Crossings Cookeville, TN -->
       <div class="project-card-wrapper fade-up stagger-2" data-category="commercial">
-        <div class="project-card" data-project='{"img":"https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=80&auto=format&fit=crop","title":"Hospital Emergency Power System","category":"Commercial","location":"Nashville, TN","description":"Critical power system design and installation for a regional hospital. Included redundant UPS systems, automatic transfer switches, generator systems, and life-safety circuit installation.","tags":["Healthcare","UPS","Generators","Critical Power"]}'>
-          <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=700&q=80&auto=format&fit=crop" alt="Hospital Emergency Power System" loading="lazy" />
+        <div class="project-card" data-project='{"img":"images/ic-board.jpg","title":"Eagle Crossings — Cookeville, TN","category":"Commercial","location":"Cookeville, TN","description":"Alpha9 Electric completed the full commercial electrical installation for Eagle Crossings, a multi-tenant complex located in Cookeville, Tennessee. The project included an 800-amp, 3-phase main service feeding two 400-amp and four 200-amp sub-services, providing reliable power distribution for multiple commercial units and an elevator system. Our team handled the service entrance, conduit runs, panel installations, grounding, lighting, and coordination with local inspectors. All work was performed to NEC standards and delivered safely, efficiently, and on schedule.","tags":["800-Amp 3-Phase Main","Multi-Tenant Complex","Elevator System","Sub-Panel Distribution","NEC Compliant"]}'>
+          <img src="images/ic-board.jpg" alt="Eagle Crossings Multi-Tenant Electrical Installation — Cookeville, TN" loading="lazy" />
           <div class="project-overlay">
-            <div class="text-white"><p class="text-accent font-bold text-xs tracking-widest uppercase mb-1">Commercial</p><h3 class="font-bold text-xl">Hospital Emergency Power System</h3><p class="text-white/80 text-sm mt-1">Click to view details</p></div>
+            <div class="text-white"><p class="text-accent font-bold text-xs tracking-widest uppercase mb-1">Commercial</p><h3 class="font-bold text-xl">Eagle Crossings — Cookeville, TN</h3><p class="text-white/80 text-sm mt-1">Click to view details</p></div>
           </div>
         </div>
         <div class="project-card-info">
           <p class="project-category"><i data-lucide="tag" class="w-3.5 h-3.5"></i> Commercial</p>
-          <h3 class="font-bold text-gray-900">Hospital Emergency Power System</h3>
-          <p class="text-sm text-gray-500 mt-1">Nashville, TN</p>
+          <h3 class="font-bold text-gray-900">Eagle Crossings — Cookeville, TN</h3>
+          <p class="text-sm text-gray-500 mt-1">800-Amp Service &amp; Multi-Tenant Power Distribution</p>
         </div>
       </div>
 
-      <!-- Project 9 -->
-      <div class="project-card-wrapper fade-up stagger-3" data-category="residential">
-        <div class="project-card" data-project='{"img":"https://images.unsplash.com/photo-1558449028-b53a39d100fc?w=900&q=80&auto=format&fit=crop","title":"Residential Neighborhood Wiring","category":"Residential","location":"Kingston, TN","description":"Full electrical installation for a new residential neighborhood development of 45 homes. Scope included underground distribution, individual home panels, lighting, and energy-efficient upgrades throughout.","tags":["New Construction","Underground","Panel Install","LED"]}'>
-          <img src="https://images.unsplash.com/photo-1558449028-b53a39d100fc?w=700&q=80&auto=format&fit=crop" alt="Residential Neighborhood Wiring" loading="lazy" />
+      <!-- Project 3: AK&J Warehouse Kingston, TN -->
+      <div class="project-card-wrapper fade-up stagger-3" data-category="industrial">
+        <div class="project-card" data-project='{"img":"images/industrial.jpg","title":"AK&amp;J Warehouse — Kingston, TN","category":"Industrial","location":"Kingston, TN","description":"Alpha9 Electric completed a full electrical renovation and upgrade for a large commercial warehouse in Kingston, Tennessee. The project involved demolition of existing electrical systems and installation of all-new wiring, panels, and fixtures throughout the building. Scope included dedicated circuits for multiple HVAC units, air compressors, offices, conference rooms, and warehouse areas. The team also installed new LED lighting, receptacles, and power distribution to meet modern operational needs. All work was completed to NEC standards, ensuring safety, efficiency, and improved functionality for the facility.","tags":["Full Electrical Renovation","LED Lighting","HVAC Circuits","Air Compressor Circuits","Panel Upgrade","NEC Compliant"]}'>
+          <img src="images/industrial.jpg" alt="AK&amp;J Warehouse Electrical Renovation — Kingston, TN" loading="lazy" />
           <div class="project-overlay">
-            <div class="text-white"><p class="text-accent font-bold text-xs tracking-widest uppercase mb-1">Residential</p><h3 class="font-bold text-xl">Residential Neighborhood Wiring</h3><p class="text-white/80 text-sm mt-1">Click to view details</p></div>
+            <div class="text-white"><p class="text-accent font-bold text-xs tracking-widest uppercase mb-1">Industrial</p><h3 class="font-bold text-xl">AK&amp;J Warehouse — Kingston, TN</h3><p class="text-white/80 text-sm mt-1">Click to view details</p></div>
+          </div>
+        </div>
+        <div class="project-card-info">
+          <p class="project-category"><i data-lucide="tag" class="w-3.5 h-3.5"></i> Industrial</p>
+          <h3 class="font-bold text-gray-900">AK&amp;J Warehouse — Kingston, TN</h3>
+          <p class="text-sm text-gray-500 mt-1">Full Electrical Renovation &amp; LED Upgrade</p>
+        </div>
+      </div>
+
+      <!-- Project 4: Shatel Ct. Cookeville, TN -->
+      <div class="project-card-wrapper fade-up stagger-4" data-category="residential">
+        <div class="project-card" data-project='{"img":"images/residential.jpg","title":"Shatel Ct. Townhouses — Cookeville, TN","category":"Residential","location":"Cookeville, TN","description":"Alpha9 Electric completed the full residential electrical installation for 14 new townhouses on Shatel Ct. Each home was equipped with a 200-amp electrical service, energy-efficient LED lighting, and dedicated circuits for HVAC systems and major appliances. The project also included low-voltage wiring for data, security cameras, and communication lines, providing a complete power and connectivity solution. All electrical work was completed in accordance with NEC safety standards, inspected, and approved for occupancy.","tags":["14 Townhouses","200-Amp Per Unit","New Construction","LED Lighting","Low-Voltage Wiring","Security Cameras","NEC Compliant"]}'>
+          <img src="images/residential.jpg" alt="Shatel Ct. Townhouse Electrical Installation — Cookeville, TN" loading="lazy" />
+          <div class="project-overlay">
+            <div class="text-white"><p class="text-accent font-bold text-xs tracking-widest uppercase mb-1">Residential</p><h3 class="font-bold text-xl">Shatel Ct. Townhouses — Cookeville, TN</h3><p class="text-white/80 text-sm mt-1">Click to view details</p></div>
           </div>
         </div>
         <div class="project-card-info">
           <p class="project-category"><i data-lucide="tag" class="w-3.5 h-3.5"></i> Residential</p>
-          <h3 class="font-bold text-gray-900">Residential Neighborhood Wiring</h3>
-          <p class="text-sm text-gray-500 mt-1">Kingston, TN</p>
+          <h3 class="font-bold text-gray-900">Shatel Ct. Townhouses — Cookeville, TN</h3>
+          <p class="text-sm text-gray-500 mt-1">14 New Townhouses — Full Electrical Installation</p>
         </div>
       </div>
 
@@ -340,21 +374,103 @@
   </div>
 </section>
 
+<!-- FAQ SECTION -->
+<section class="py-24 bg-gray-50 bg-pattern">
+  <div class="max-w-4xl mx-auto px-4">
+    <div class="text-center mb-16 fade-up">
+      <span class="section-eyebrow text-accent">Got Questions?</span>
+      <h2 class="font-heading font-black text-4xl text-primary mt-2 mb-4">Project FAQs</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">Everything you need to know before starting your electrical project with Alpha9Electric.</p>
+    </div>
+    <div class="space-y-4">
+      <details class="card p-6 group cursor-pointer fade-up">
+        <summary class="flex items-center justify-between font-bold text-primary text-lg list-none">
+          What types of projects does Alpha9Electric handle?
+          <i data-lucide="chevron-down" class="w-5 h-5 text-accent group-open:rotate-180 transition-transform flex-shrink-0 ml-4"></i>
+        </summary>
+        <p class="text-gray-600 mt-4 text-sm leading-relaxed">We handle a wide range of electrical projects — from residential rewiring and panel upgrades to full commercial fit-outs, industrial installations, EV charger setups, and CCTV/security system integrations.</p>
+      </details>
+      <details class="card p-6 group cursor-pointer fade-up">
+        <summary class="flex items-center justify-between font-bold text-primary text-lg list-none">
+          How do I get a quote for my project?
+          <i data-lucide="chevron-down" class="w-5 h-5 text-accent group-open:rotate-180 transition-transform flex-shrink-0 ml-4"></i>
+        </summary>
+        <p class="text-gray-600 mt-4 text-sm leading-relaxed">Simply call us at (865) 290-0218 or fill out our contact form. We'll schedule a site visit or phone consultation to assess your needs and provide a detailed, no-obligation quote.</p>
+      </details>
+      <details class="card p-6 group cursor-pointer fade-up">
+        <summary class="flex items-center justify-between font-bold text-primary text-lg list-none">
+          How long does a typical project take to complete?
+          <i data-lucide="chevron-down" class="w-5 h-5 text-accent group-open:rotate-180 transition-transform flex-shrink-0 ml-4"></i>
+        </summary>
+        <p class="text-gray-600 mt-4 text-sm leading-relaxed">Project timelines vary based on scope. Small residential jobs (outlets, fixtures, panel upgrades) are often completed in a single day. Larger commercial or industrial projects may span several days to weeks. We provide a clear timeline upfront.</p>
+      </details>
+      <details class="card p-6 group cursor-pointer fade-up">
+        <summary class="flex items-center justify-between font-bold text-primary text-lg list-none">
+          Do you provide warranties on completed work?
+          <i data-lucide="chevron-down" class="w-5 h-5 text-accent group-open:rotate-180 transition-transform flex-shrink-0 ml-4"></i>
+        </summary>
+        <p class="text-gray-600 mt-4 text-sm leading-relaxed">Yes. All our work is backed by a craftsmanship warranty, and the materials and equipment we install come with manufacturer warranties. We stand behind every project we complete.</p>
+      </details>
+      <details class="card p-6 group cursor-pointer fade-up">
+        <summary class="flex items-center justify-between font-bold text-primary text-lg list-none">
+          Are your electricians licensed and insured?
+          <i data-lucide="chevron-down" class="w-5 h-5 text-accent group-open:rotate-180 transition-transform flex-shrink-0 ml-4"></i>
+        </summary>
+        <p class="text-gray-600 mt-4 text-sm leading-relaxed">Absolutely. Alpha9Electric is fully licensed, bonded, and insured in the state of Tennessee. Every project is completed by certified professionals who adhere to the latest NEC codes and local building regulations.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
 <!-- FOOTER -->
 <footer class="footer pt-16 pb-8">
   <div class="max-w-7xl mx-auto px-4">
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
-      <div>
-        <!-- <img src="images/logo.png" alt="Alpha9Electric Logo" class="h-12 footer-logo mb-5 object-contain" /> -->
-        <p class="text-white/60 text-sm leading-relaxed">
-        Alpha9Electric — Trusted electrical solutions since 30+ years.</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+      <div class="lg:col-span-1">
+        <p class="text-white/60 text-sm leading-relaxed mb-6">Alpha9Electric — Licensed electrical contractors with 25+ years of excellence serving residential, commercial, and industrial clients across Tennessee.</p>
+        <div class="flex gap-3">
+          <a href="https://www.facebook.com/alpha9electric" target="_blank" rel="noopener" aria-label="Facebook" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white/70 hover:bg-accent hover:text-white transition-all"><i class="fa-brands fa-facebook-f text-sm"></i></a>
+          <a href="https://www.instagram.com/alpha9electric" target="_blank" rel="noopener" aria-label="Instagram" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white/70 hover:bg-accent hover:text-white transition-all"><i class="fa-brands fa-instagram text-sm"></i></a>
+          <a href="https://www.linkedin.com/company/alpha9electric" target="_blank" rel="noopener" aria-label="LinkedIn" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white/70 hover:bg-accent hover:text-white transition-all"><i class="fa-brands fa-linkedin-in text-sm"></i></a>
+          <a href="https://www.youtube.com/@alpha9electric" target="_blank" rel="noopener" aria-label="YouTube" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white/70 hover:bg-accent hover:text-white transition-all"><i class="fa-brands fa-youtube text-sm"></i></a>
+        </div>
       </div>
-      <div><h4 class="footer-heading">Quick Links</h4><ul class="space-y-2.5"><li><a href="index.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Home</a></li><li><a href="about.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>About Us</a></li><li><a href="services.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Services</a></li><li><a href="contact.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Contact</a></li></ul></div>
-      <div><h4 class="footer-heading">Project Types</h4><ul class="space-y-2.5"><li><a href="projects.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Residential</a></li><li><a href="projects.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Commercial</a></li><li><a href="projects.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Industrial</a></li><li><a href="projects.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Custom Installations</a></li></ul></div>
-      <div><h4 class="footer-heading">Contact</h4><ul class="space-y-4"><li class="flex items-start gap-3 text-sm text-white/70"><i data-lucide="map-pin" class="w-4 h-4 text-accent mt-0.5"></i>937 Gallaher Rd, Kingston TN</li><li><a href="tel:8652900218" class="flex items-center gap-3 text-sm footer-link"><i data-lucide="phone" class="w-4 h-4 text-accent"></i>(865) 290-0218</a></li><li><a href="mailto:info@alph9electric.com" class="flex items-center gap-3 text-sm footer-link"><i data-lucide="mail" class="w-4 h-4 text-accent"></i>info@alph9electric.com</a></li></ul></div>
+      <div>
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="space-y-2.5">
+          <li><a href="index.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Home</a></li>
+          <li><a href="about.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>About Us</a></li>
+          <li><a href="services.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Services</a></li>
+          <li><a href="projects.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Projects</a></li>
+          <li><a href="blog.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Blog</a></li>
+          <li><a href="faq.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>FAQ</a></li>
+          <li><a href="contact.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-heading">Our Services</h4>
+        <ul class="space-y-2.5">
+          <li><a href="services.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Residential Wiring</a></li>
+          <li><a href="services.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Commercial Electrical</a></li>
+          <li><a href="services.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Industrial Installations</a></li>
+          <li><a href="services.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>CCTV & Security</a></li>
+          <li><a href="services.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Maintenance & Repairs</a></li>
+          <li><a href="services.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>24/7 Emergency</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-heading">Contact Information</h4>
+        <ul class="space-y-4">
+          <li class="flex items-start gap-3 text-sm text-white/70"><i data-lucide="map-pin" class="w-4 h-4 text-accent mt-0.5 flex-shrink-0"></i>937 Gallaher Rd, Kingston TN</li>
+          <li><a href="tel:8652900218" class="flex items-center gap-3 text-sm footer-link"><i data-lucide="phone" class="w-4 h-4 text-accent flex-shrink-0"></i>(865) 290-0218</a></li>
+          <li><a href="mailto:info@alph9electric.com" class="flex items-center gap-3 text-sm footer-link"><i data-lucide="mail" class="w-4 h-4 text-accent flex-shrink-0"></i>info@alph9electric.com</a></li>
+        </ul>
+        <a href="contact.html" class="btn-primary mt-6 text-sm py-2.5 px-5 inline-flex"><i data-lucide="send" class="w-4 h-4"></i> Get a Free Quote</a>
+      </div>
     </div>
     <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-white/40">
-      <p>© 2025 Alpha9Electric. All rights reserved.</p><p>Power Product Manufacturing & System Solutions</p>
+      <p>© 2025 Alpha9Electric. All rights reserved.</p>
+      <p>Licensed Electrical Services — Residential, Commercial & Industrial</p>
     </div>
   </div>
 </footer>

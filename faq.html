@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frequently Asked Questions | Alpha9Electric – Electrical & Security Solutions</title>
+  <meta name="description" content="Have questions about our electrical or security systems? Browse our Frequently Asked Questions for answers on services, licensing, installations, and more." />
+  <meta name="author" content="Alpha9Electric" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://alpha9electric.com/faq.html" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: { DEFAULT: '#181f6f', dark: '#0f1550', light: '#2d3a9e' },
+            accent: { DEFAULT: '#f1620f', light: '#ff7a2e', dark: '#c44d00' }
+          },
+          fontFamily: { sans: ['Inter', 'sans-serif'], heading: ['Poppins', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+<body>
+<div id="scroll-progress"></div>
+
+<!-- TOP BAR -->
+<div class="top-bar hidden md:block">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between">
+    <div class="flex items-center gap-6">
+      <a href="tel:8652900218" class="flex items-center gap-2 hover:text-accent transition-colors"><i data-lucide="phone" class="w-3.5 h-3.5"></i>(865) 290-0218</a>
+      <a href="mailto:info@alph9electric.com" class="flex items-center gap-2 hover:text-accent transition-colors"><i data-lucide="mail" class="w-3.5 h-3.5"></i>info@alph9electric.com</a>
+    </div>
+    <span class="flex items-center gap-1.5 text-green-400 font-medium"><i data-lucide="shield-check" class="w-3.5 h-3.5"></i>100% Satisfaction Guaranteed</span>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav id="navbar" class="py-4 scrolled" style="background:white;box-shadow:0 2px 20px rgba(0,0,0,.1);">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between">
+    <a href="index.html"><img src="images/logo.png" alt="Alpha9Electric Logo" class="nav-logo-img w-auto object-contain" style="filter:none" /></a>
+    <div class="hidden lg:flex items-center gap-8">
+      <a href="index.html" class="nav-link text-gray-800 text-sm font-medium">Home</a>
+      <a href="about.html" class="nav-link text-gray-800 text-sm font-medium">About Us</a>
+      <div class="nav-services-wrapper">
+        <a href="services.html" class="nav-link nav-services-trigger text-gray-800 text-sm font-medium flex items-center gap-1">
+          Services <i data-lucide="chevron-down" class="w-3.5 h-3.5 nav-chevron"></i>
+        </a>
+        <div class="nav-mega-menu">
+          <div class="nav-mega-header">
+            <div class="nav-mega-header-left">
+              <div class="nav-mega-header-icon">
+                <i data-lucide="zap" class="w-5 h-5" style="color:#ffa070"></i>
+              </div>
+              <div class="nav-mega-header-text">
+                <strong>Electrical Services</strong>
+                <span>Licensed &amp; Professional</span>
+              </div>
+            </div>
+          </div>
+          <div class="nav-mega-inner">
+            <div class="nav-mega-col">
+              <div class="nav-mega-cat-header">
+                <div class="nav-mega-cat-icon" style="background:var(--primary)"><i data-lucide="home" class="w-4 h-4 text-white"></i></div>
+                <span class="nav-mega-cat-title">Residential</span>
+              </div>
+              <ul class="nav-mega-list">
+                <li><a href="services.html">New Construction Wiring</a></li>
+                <li><a href="services.html">Panel Upgrades &amp; Rewiring</a></li>
+                <li><a href="services.html">Lighting Installation</a></li>
+              </ul>
+            </div>
+            <div class="nav-mega-col">
+              <div class="nav-mega-cat-header">
+                <div class="nav-mega-cat-icon" style="background:var(--accent)"><i data-lucide="building-2" class="w-4 h-4 text-white"></i></div>
+                <span class="nav-mega-cat-title">Commercial</span>
+              </div>
+              <ul class="nav-mega-list">
+                <li><a href="services.html">Commercial Wiring</a></li>
+                <li><a href="services.html">Lighting Solutions</a></li>
+                <li><a href="services.html">Generator Installation</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="nav-mega-footer">
+            <a href="services.html" class="nav-mega-cta">View All Services <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="service-areas.html" class="nav-link text-gray-800 text-sm font-medium">Service Areas</a>
+      <a href="projects.html" class="nav-link text-gray-800 text-sm font-medium">Projects</a>
+      <a href="blog.html" class="nav-link text-gray-800 text-sm font-medium">Blog</a>
+      <a href="faq.html" class="nav-link text-gray-800 text-sm font-medium active">FAQ</a>
+      <a href="contact.html" class="btn-primary text-sm py-2.5 px-5"><i data-lucide="phone" class="w-4 h-4"></i> Contact Us</a>
+    </div>
+    <button id="menu-btn" class="lg:hidden text-primary p-2"><i data-lucide="menu" class="w-6 h-6"></i></button>
+  </div>
+</nav>
+
+<div id="mobile-menu">
+  <button id="menu-close" class="absolute top-6 right-6 text-white"><i data-lucide="x" class="w-8 h-8"></i></button>
+  <a href="index.html" class="mobile-nav-link">Home</a>
+  <a href="about.html" class="mobile-nav-link">About Us</a>
+  <a href="services.html" class="mobile-nav-link">Services</a>
+  <a href="service-areas.html" class="mobile-nav-link">Service Areas</a>
+  <a href="projects.html" class="mobile-nav-link">Projects</a>
+  <a href="blog.html" class="mobile-nav-link">Blog</a>
+  <a href="faq.html" class="mobile-nav-link active">FAQ</a>
+  <a href="contact.html" class="mobile-nav-link">Contact</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="max-w-7xl mx-auto px-4 text-center text-white relative z-10">
+    <span class="section-eyebrow text-orange-300 fade-up">Got Questions?</span>
+    <h1 class="font-heading font-black text-4xl lg:text-6xl text-white mt-2 mb-4 fade-up stagger-1">Frequently Asked Questions</h1>
+    <p class="text-white/75 text-lg max-w-2xl mx-auto fade-up stagger-2">Everything you need to know about our modern electrical systems and advanced security solutions.</p>
+  </div>
+</section>
+
+<!-- FAQ CONTENT -->
+<section class="py-24 bg-gray-50 bg-pattern">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-12">
+      
+      <!-- Sticky Sidebar -->
+      <div class="lg:col-span-1">
+        <div class="sticky top-32 space-y-2 fade-up">
+          <h3 class="text-xs font-black uppercase tracking-widest text-primary mb-6">Categories</h3>
+          <a href="#general" class="flex items-center justify-between p-4 bg-white border border-gray-100 rounded-xl font-bold text-sm text-primary hover:border-accent hover:text-accent transition-all shadow-sm">
+            General Questions <i data-lucide="chevron-right" class="w-4 h-4"></i>
+          </a>
+          <a href="#electrical" class="flex items-center justify-between p-4 bg-white border border-gray-100 rounded-xl font-bold text-sm text-primary hover:border-accent hover:text-accent transition-all shadow-sm">
+            Electrical Services <i data-lucide="chevron-right" class="w-4 h-4"></i>
+          </a>
+          <a href="#security" class="flex items-center justify-between p-4 bg-white border border-gray-100 rounded-xl font-bold text-sm text-primary hover:border-accent hover:text-accent transition-all shadow-sm">
+            Security Camera Services <i data-lucide="chevron-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- FAQ Accordions -->
+      <div class="lg:col-span-3 space-y-16">
+        
+        <!-- General Questions -->
+        <div id="general" class="scroll-mt-32">
+          <div class="flex items-center gap-3 mb-8 fade-up">
+            <div class="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
+              <i data-lucide="help-circle" class="w-5 h-5 text-accent"></i>
+            </div>
+            <h2 class="font-heading font-bold text-2xl text-primary">General Questions</h2>
+          </div>
+          <div class="space-y-4">
+            <details class="card p-6 group cursor-pointer fade-up">
+              <summary class="flex items-center justify-between font-bold text-primary text-lg list-none">
+                What services does Alpha9 Solutions offer?
+                <i data-lucide="chevron-down" class="w-5 h-5 text-accent group-open:rotate-180 transition-transform flex-shrink-0 ml-4"></i>
+              </summary>
+              <p class="text-gray-600 mt-4 text-sm leading-relaxed">We specialize in residential and commercial electrical services, including installation, maintenance, and repair. Additionally, we provide security camera solutions including installation, integration, and maintenance for CCTV systems.</p>
+            </details>
+            <details class="card p-6 group cursor-pointer fade-up">
+              <summary class="flex items-center justify-between font-bold text-primary text-lg list-none">
+                Are you licensed and insured?
+                <i data-lucide="chevron-down" class="w-5 h-5 text-accent group-open:rotate-180 transition-transform flex-shrink-0 ml-4"></i>
+              </summary>
+              <p class="text-gray-600 mt-4 text-sm leading-relaxed">Yes, Alpha9 Solutions is fully licensed and insured to provide professional electrical and security camera services for both residential and commercial clients.</p>
+            </details>
+            <details class="card p-6 group cursor-pointer fade-up">
+              <summary class="flex items-center justify-between font-bold text-primary text-lg list-none">
+                What areas do you serve?
+                <i data-lucide="chevron-down" class="w-5 h-5 text-accent group-open:rotate-180 transition-transform flex-shrink-0 ml-4"></i>
+              </summary>
+              <p class="text-gray-600 mt-4 text-sm leading-relaxed">We provide services across the East Tennessee region. Contact us to confirm if your specific location is within our immediate coverage area.</p>
+            </details>
+          </div>
+        </div>
+
+        <!-- Electrical Services -->
+        <div id="electrical" class="scroll-mt-32">
+          <div class="flex items-center gap-3 mb-8 fade-up">
+            <div class="w-10 h-10 rounded-lg bg-accent flex items-center justify-center">
+              <i data-lucide="zap" class="w-5 h-5 text-white"></i>
+            </div>
+            <h2 class="font-heading font-bold text-2xl text-primary">Electrical Services</h2>
+          </div>
+          <div class="space-y-4">
+            <details class="card p-6 group cursor-pointer fade-up">
+              <summary class="flex items-center justify-between font-bold text-primary text-lg list-none">
+                Do you handle residential electrical repairs and installations?
+                <i data-lucide="chevron-down" class="w-5 h-5 text-accent group-open:rotate-180 transition-transform flex-shrink-0 ml-4"></i>
+              </summary>
+              <p class="text-gray-600 mt-4 text-sm leading-relaxed">Yes, we handle all types of residential electrical work, including whole-house wiring, lighting installations, panel upgrades, and detailed troubleshooting of electrical issues.</p>
+            </details>
+            <details class="card p-6 group cursor-pointer fade-up">
+              <summary class="flex items-center justify-between font-bold text-primary text-lg list-none">
+                Can you assist with commercial electrical projects?
+                <i data-lucide="chevron-down" class="w-5 h-5 text-accent group-open:rotate-180 transition-transform flex-shrink-0 ml-4"></i>
+              </summary>
+              <p class="text-gray-600 mt-4 text-sm leading-relaxed">Absolutely! We specialize in commercial projects such as office wiring, breaker installations, industrial equipment connections, and energy-efficient lighting upgrades for businesses.</p>
+            </details>
+            <details class="card p-6 group cursor-pointer fade-up">
+              <summary class="flex items-center justify-between font-bold text-primary text-lg list-none">
+                Do you offer electrical inspections?
+                <i data-lucide="chevron-down" class="w-5 h-5 text-accent group-open:rotate-180 transition-transform flex-shrink-0 ml-4"></i>
+              </summary>
+              <p class="text-gray-600 mt-4 text-sm leading-relaxed">Yes, we provide detailed electrical inspections to ensure your system meets all current safety standards, code requirements, and operates at peak efficiency.</p>
+            </details>
+            <details class="card p-6 group cursor-pointer fade-up">
+              <summary class="flex items-center justify-between font-bold text-primary text-lg list-none">
+                Can you upgrade my electrical panel?
+                <i data-lucide="chevron-down" class="w-5 h-5 text-accent group-open:rotate-180 transition-transform flex-shrink-0 ml-4"></i>
+              </summary>
+              <p class="text-gray-600 mt-4 text-sm leading-relaxed">Yes, we offer heavy-up panel upgrade services to accommodate increased electrical loads, ensuring safety and compliance with modern standards for your home or business.</p>
+            </details>
+            <details class="card p-6 group cursor-pointer fade-up">
+              <summary class="flex items-center justify-between font-bold text-primary text-lg list-none">
+                What should I do during a power outage or electrical emergency?
+                <i data-lucide="chevron-down" class="w-5 h-5 text-accent group-open:rotate-180 transition-transform flex-shrink-0 ml-4"></i>
+              </summary>
+              <p class="text-gray-600 mt-4 text-sm leading-relaxed">For your safety, switch off all major appliances to prevent surges and contact us immediately. We offer 24/7 troubleshooting and resolution for most electrical emergencies.</p>
+            </details>
+            <details class="card p-6 group cursor-pointer fade-up">
+              <summary class="flex items-center justify-between font-bold text-primary text-lg list-none">
+                How often should I schedule electrical maintenance?
+                <i data-lucide="chevron-down" class="w-5 h-5 text-accent group-open:rotate-180 transition-transform flex-shrink-0 ml-4"></i>
+              </summary>
+              <p class="text-gray-600 mt-4 text-sm leading-relaxed">For residential properties, we recommend an annual inspection. For commercial establishments, regular maintenance every 6 months is advisable to prevent downtime.</p>
+            </details>
+          </div>
+        </div>
+
+        <!-- Security Camera Services -->
+        <div id="security" class="scroll-mt-32">
+          <div class="flex items-center gap-3 mb-8 fade-up">
+            <div class="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
+              <i data-lucide="camera" class="w-5 h-5 text-accent"></i>
+            </div>
+            <h2 class="font-heading font-bold text-2xl text-primary">Security Camera Services</h2>
+          </div>
+          <div class="space-y-4">
+            <details class="card p-6 group cursor-pointer fade-up">
+              <summary class="flex items-center justify-between font-bold text-primary text-lg list-none">
+                What types of security cameras do you install?
+                <i data-lucide="chevron-down" class="w-5 h-5 text-accent group-open:rotate-180 transition-transform flex-shrink-0 ml-4"></i>
+              </summary>
+              <p class="text-gray-600 mt-4 text-sm leading-relaxed">We install various professional-grade cameras, including dome, bullet, PTZ (pan-tilt-zoom), and both robust wired and flexible wireless IP systems.</p>
+            </details>
+            <details class="card p-6 group cursor-pointer fade-up">
+              <summary class="flex items-center justify-between font-bold text-primary text-lg list-none">
+                Can I monitor my security cameras remotely?
+                <i data-lucide="camera" class="w-5 h-5 text-accent group-open:rotate-180 transition-transform flex-shrink-0 ml-4"></i>
+              </summary>
+              <p class="text-gray-600 mt-4 text-sm leading-relaxed">Yes, we specialize in remote-access setups that allow you to monitor high-definition footage via a secure smartphone app or web platform from anywhere in the world.</p>
+            </details>
+            <details class="card p-6 group cursor-pointer fade-up">
+              <summary class="flex items-center justify-between font-bold text-primary text-lg list-none">
+                How long does it take to install a security camera system?
+                <i data-lucide="chevron-down" class="w-5 h-5 text-accent group-open:rotate-180 transition-transform flex-shrink-0 ml-4"></i>
+              </summary>
+              <p class="text-gray-600 mt-4 text-sm leading-relaxed">Install times vary. Small residential systems typically take a few hours, while larger commercial setups with complex integration may take a day or more.</p>
+            </details>
+            <details class="card p-6 group cursor-pointer fade-up">
+              <summary class="flex items-center justify-between font-bold text-primary text-lg list-none">
+                Do you offer maintenance services for CCTV systems?
+                <i data-lucide="chevron-down" class="w-5 h-5 text-accent group-open:rotate-180 transition-transform flex-shrink-0 ml-4"></i>
+              </summary>
+              <p class="text-gray-600 mt-4 text-sm leading-relaxed">Yes, we provide routine maintenance including lens cleaning, connection integrity checks, storage optimization, and firmware updates.</p>
+            </details>
+            <details class="card p-6 group cursor-pointer fade-up">
+              <summary class="flex items-center justify-between font-bold text-primary text-lg list-none">
+                How can I choose the best security camera system for my property?
+                <i data-lucide="chevron-down" class="w-5 h-5 text-accent group-open:rotate-180 transition-transform flex-shrink-0 ml-4"></i>
+              </summary>
+              <p class="text-gray-600 mt-4 text-sm leading-relaxed">Our experts perform a layout assessment of your property to recommend the best hardware based on your needs, budget, and desired features like night vision and motion detection.</p>
+            </details>
+          </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="bg-primary rounded-3xl p-12 text-center text-white relative overflow-hidden fade-up">
+          <div class="relative z-10">
+            <h3 class="text-2xl font-bold mb-4">Still Have Questions?</h3>
+            <p class="text-white/70 mb-8 max-w-xl mx-auto">If you have further questions or want to schedule a service, don’t hesitate to contact us at <strong>(865) 290-0218</strong> or email us at <strong>info@alph9electric.com</strong>.</p>
+            <a href="contact.html" class="btn-primary inline-flex">Schedule a Service Today</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer pt-16 pb-8">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+      <div class="lg:col-span-1">
+        <p class="text-white/60 text-sm leading-relaxed mb-6">Alpha9Electric — Licensed electrical contractors with 25+ years of excellence serving residential, commercial, and industrial clients across Tennessee.</p>
+        <div class="flex gap-3">
+          <a href="https://www.facebook.com/alpha9electric" target="_blank" rel="noopener" aria-label="Facebook" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white/70 hover:bg-accent hover:text-white transition-all"><i class="fa-brands fa-facebook-f text-sm"></i></a>
+          <a href="https://www.instagram.com/alpha9electric" target="_blank" rel="noopener" aria-label="Instagram" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white/70 hover:bg-accent hover:text-white transition-all"><i class="fa-brands fa-instagram text-sm"></i></a>
+          <a href="https://www.linkedin.com/company/alpha9electric" target="_blank" rel="noopener" aria-label="LinkedIn" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white/70 hover:bg-accent hover:text-white transition-all"><i class="fa-brands fa-linkedin-in text-sm"></i></a>
+          <a href="https://www.youtube.com/@alpha9electric" target="_blank" rel="noopener" aria-label="YouTube" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white/70 hover:bg-accent hover:text-white transition-all"><i class="fa-brands fa-youtube text-sm"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="space-y-2.5">
+          <li><a href="index.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Home</a></li>
+          <li><a href="about.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>About Us</a></li>
+          <li><a href="services.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Services</a></li>
+          <li><a href="projects.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Projects</a></li>
+          <li><a href="blog.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Blog</a></li>
+          <li><a href="faq.html" class="footer-link text-sm flex items-center gap-1.5 font-bold text-accent"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>FAQ</a></li>
+          <li><a href="contact.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-heading">Our Services</h4>
+        <ul class="space-y-2.5">
+          <li><a href="services.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Residential Wiring</a></li>
+          <li><a href="services.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Commercial Electrical</a></li>
+          <li><a href="services.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Industrial Installations</a></li>
+          <li><a href="services.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>CCTV & Security</a></li>
+          <li><a href="services.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>Maintenance & Repairs</a></li>
+          <li><a href="services.html" class="footer-link text-sm flex items-center gap-1.5"><i data-lucide="chevron-right" class="w-3.5 h-3.5 text-accent"></i>24/7 Emergency</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-heading">Contact Information</h4>
+        <ul class="space-y-4">
+          <li class="flex items-start gap-3 text-sm text-white/70"><i data-lucide="map-pin" class="w-4 h-4 text-accent mt-0.5 flex-shrink-0"></i>937 Gallaher Rd, Kingston TN</li>
+          <li><a href="tel:8652900218" class="flex items-center gap-3 text-sm footer-link"><i data-lucide="phone" class="w-4 h-4 text-accent flex-shrink-0"></i>(865) 290-0218</a></li>
+          <li><a href="mailto:info@alph9electric.com" class="flex items-center gap-3 text-sm footer-link"><i data-lucide="mail" class="w-4 h-4 text-accent flex-shrink-0"></i>info@alph9electric.com</a></li>
+        </ul>
+        <a href="contact.html" class="btn-primary mt-6 text-sm py-2.5 px-5 inline-flex"><i data-lucide="send" class="w-4 h-4"></i> Get a Free Quote</a>
+      </div>
+    </div>
+    <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-white/40">
+      <p>© 2025 Alpha9Electric. All rights reserved.</p>
+      <p>Licensed Electrical Services — Residential, Commercial & Industrial</p>
+    </div>
+  </div>
+</footer>
+
+<button id="back-to-top"><i data-lucide="chevron-up" class="w-5 h-5"></i></button>
+<script>lucide.createIcons();</script>
+<script src="script.js"></script>
+</body>
+</html>

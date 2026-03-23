@@ -86,11 +86,98 @@
 <!-- NAVBAR -->
 <nav id="navbar" class="py-4 scrolled" style="background:white;box-shadow:0 2px 20px rgba(0,0,0,.1);">
   <div class="max-w-7xl mx-auto px-4 flex items-center justify-between">
-    <a href="index.html"><img src="images/logo.png" alt="Alpha9Electric Logo" class="h-12 w-auto object-contain" style="filter:none" /></a>
+    <a href="index.html"><img src="images/logo.png" alt="Alpha9Electric Logo" class="nav-logo-img w-auto object-contain" style="filter:none" /></a>
     <div class="hidden lg:flex items-center gap-8">
       <a href="index.html" class="nav-link text-gray-800 text-sm font-medium">Home</a>
       <a href="about.html" class="nav-link text-gray-800 text-sm font-medium">About Us</a>
-      <a href="services.html" class="nav-link text-gray-800 text-sm font-medium">Services</a>
+      <div class="nav-services-wrapper">
+        <a href="services.html" class="nav-link nav-services-trigger text-gray-800 text-sm font-medium flex items-center gap-1">
+          Services <i data-lucide="chevron-down" class="w-3.5 h-3.5 nav-chevron"></i>
+        </a>
+        <div class="nav-mega-menu">
+          <div class="nav-mega-header">
+            <div class="nav-mega-header-left">
+              <div class="nav-mega-header-icon">
+                <i data-lucide="zap" class="w-5 h-5" style="color:#ffa070"></i>
+              </div>
+              <div class="nav-mega-header-text">
+                <strong>Electrical Services</strong>
+                <span>Licensed &amp; Professional</span>
+              </div>
+            </div>
+            <span class="nav-mega-header-badge">
+              <i data-lucide="clock" class="w-3 h-3"></i>
+              24/7 Emergency
+            </span>
+          </div>
+          <div class="nav-mega-inner">
+            <div class="nav-mega-col">
+              <div class="nav-mega-cat-header">
+                <div class="nav-mega-cat-icon" style="background:var(--primary)"><i data-lucide="home" class="w-4 h-4 text-white"></i></div>
+                <span class="nav-mega-cat-title">Residential</span>
+              </div>
+              <ul class="nav-mega-list">
+                <li><a href="services.html">New Construction Wiring</a></li>
+                <li><a href="services.html">Panel Upgrades &amp; Rewiring</a></li>
+                <li><a href="services.html">Lighting Installation</a></li>
+                <li><a href="services.html">Wiring Upgrades &amp; Repairs</a></li>
+                <li><a href="services.html">Circuit Breaker Services</a></li>
+                <li><a href="services.html">Ceiling Fan Installation</a></li>
+              </ul>
+            </div>
+            <div class="nav-mega-col">
+              <div class="nav-mega-cat-header">
+                <div class="nav-mega-cat-icon" style="background:var(--accent)"><i data-lucide="building-2" class="w-4 h-4 text-white"></i></div>
+                <span class="nav-mega-cat-title">Commercial</span>
+              </div>
+              <ul class="nav-mega-list">
+                <li><a href="services.html">Commercial Wiring</a></li>
+                <li><a href="services.html">Lighting Solutions</a></li>
+                <li><a href="services.html">Generator Installation</a></li>
+                <li><a href="services.html">Surge Protection</a></li>
+                <li><a href="services.html">AC System Wiring</a></li>
+                <li><a href="services.html">Cable/Phone Line Install</a></li>
+              </ul>
+            </div>
+            <div class="nav-mega-col">
+              <div class="nav-mega-cat-header">
+                <div class="nav-mega-cat-icon" style="background:var(--primary)"><i data-lucide="factory" class="w-4 h-4 text-white"></i></div>
+                <span class="nav-mega-cat-title">Industrial</span>
+              </div>
+              <ul class="nav-mega-list">
+                <li><a href="services.html">Industrial Wiring &amp; Controls</a></li>
+                <li><a href="services.html">Motor Control Centers</a></li>
+                <li><a href="services.html">PLC &amp; Automation</a></li>
+                <li><a href="services.html">High-Voltage Installations</a></li>
+                <li><a href="services.html">Electrical Retrofitting</a></li>
+              </ul>
+            </div>
+            <div class="nav-mega-col">
+              <div class="nav-mega-cat-header">
+                <div class="nav-mega-cat-icon" style="background:var(--accent)"><i data-lucide="camera" class="w-4 h-4 text-white"></i></div>
+                <span class="nav-mega-cat-title">CCTV &amp; Security</span>
+              </div>
+              <ul class="nav-mega-list">
+                <li><a href="services.html">CCTV Camera Installation</a></li>
+                <li><a href="services.html">Access Control Systems</a></li>
+                <li><a href="services.html">Alarm System Integration</a></li>
+                <li><a href="services.html">Network Cabling</a></li>
+                <li><a href="services.html">Remote Monitoring Setup</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="nav-mega-footer">
+            <a href="services.html" class="nav-mega-cta">
+              <i data-lucide="zap" class="w-4 h-4"></i>
+              View All Services
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+            <div class="nav-mega-footer-right">
+              <span class="nav-mega-cta-pill">25+ Years Experience</span>
+            </div>
+          </div>
+        </div>
+      </div>
       <a href="service-areas.html" class="nav-link text-gray-800 text-sm font-medium">Service Areas</a>
       <a href="projects.html" class="nav-link text-gray-800 text-sm font-medium">Projects</a>
       <a href="blog.html" class="nav-link text-gray-800 text-sm font-medium">Blog</a>
@@ -103,7 +190,28 @@
   <button id="menu-close" class="absolute top-6 right-6 text-white"><i data-lucide="x" class="w-8 h-8"></i></button>
   <a href="index.html" class="mobile-nav-link">Home</a>
   <a href="about.html" class="mobile-nav-link">About Us</a>
-  <a href="services.html" class="mobile-nav-link">Services</a>
+  <div class="mobile-services-accordion" id="mobile-services-acc">
+    <button class="mobile-services-toggle" onclick="document.getElementById('mobile-services-acc').classList.toggle('open')">
+      Services <i data-lucide="chevron-down" class="w-5 h-5 mobile-services-chevron"></i>
+    </button>
+    <div class="mobile-services-sub">
+      <span class="mobile-services-cat">Residential</span>
+      <a href="services.html">New Construction Wiring</a>
+      <a href="services.html">Panel Upgrades &amp; Rewiring</a>
+      <a href="services.html">Lighting Installation</a>
+      <span class="mobile-services-cat">Commercial</span>
+      <a href="services.html">Commercial Wiring</a>
+      <a href="services.html">Generator Installation</a>
+      <a href="services.html">Surge Protection</a>
+      <span class="mobile-services-cat">Industrial</span>
+      <a href="services.html">Industrial Wiring &amp; Controls</a>
+      <a href="services.html">PLC &amp; Automation</a>
+      <span class="mobile-services-cat">CCTV &amp; Security</span>
+      <a href="services.html">CCTV Camera Installation</a>
+      <a href="services.html">Access Control Systems</a>
+      <a href="services.html" class="mobile-services-viewall">View All Services →</a>
+    </div>
+  </div>
   <a href="service-areas.html" class="mobile-nav-link">Service Areas</a>
   <a href="projects.html" class="mobile-nav-link">Projects</a>
   <a href="blog.html" class="mobile-nav-link">Blog</a>
