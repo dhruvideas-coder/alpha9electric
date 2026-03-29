@@ -970,15 +970,18 @@ body {
   position: relative;
 }
 
-.project-card>img {
+.project-card>img,
+.project-card>picture,
+.project-card>picture img {
   width: 100%;
-  height: 240px;
+  height: 400px;
   object-fit: cover;
   display: block;
   transition: transform .5s ease;
 }
 
-.project-card:hover>img {
+.project-card:hover>img,
+.project-card:hover>picture img {
   transform: scale(1.08);
 }
 
