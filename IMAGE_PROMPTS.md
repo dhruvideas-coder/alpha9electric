@@ -1,6 +1,6 @@
-# Alpha9Electric — AI Image Generation Guide
+# Alpha9 Electric — AI Image Generation Guide
 ### For: Gemini / Google ImageFX / Any AI Image Tool
-### Business: Alpha9Electric | Kingston, Tennessee | Licensed Electrical Services
+### Business: Alpha9 Electric | Kingston, Tennessee | Licensed Electrical Services
 
 ---
 
@@ -35,7 +35,7 @@ Photorealistic wide-angle photograph of a licensed electrician in a dark navy bl
 ---
 
 ### IMAGE 2 — `home-collage-1.jpg`
-**Location**: Homepage "About Alpha9Electric" section — large top image in 3-photo collage
+**Location**: Homepage "About Alpha9 Electric" section — large top image in 3-photo collage
 **Size**: 1200x600px (wide)
 
 **Gemini Prompt:**
@@ -471,7 +471,7 @@ Photorealistic photograph of Farragut, Tennessee showing a clean, upscale suburb
 
 **Gemini Prompt:**
 ```
-Photorealistic photograph of Kingston, Tennessee (Roane County) showing the downtown area, the Tennessee River waterfront, or a scenic view of the town with rolling green hills. Small American town character, peaceful and welcoming. Alpha9Electric's home city. No text.
+Photorealistic photograph of Kingston, Tennessee (Roane County) showing the downtown area, the Tennessee River waterfront, or a scenic view of the town with rolling green hills. Small American town character, peaceful and welcoming. Alpha9 Electric's home city. No text.
 ```
 
 ---
@@ -530,7 +530,7 @@ Photorealistic photograph of a peaceful rural Tennessee landscape representing O
 
 **Gemini Prompt:**
 ```
-Clean professional company logo for "Alpha9Electric" electrical services. Includes a bold lightning bolt icon, text "Alpha9Electric" in strong modern sans-serif font, small tagline "Licensed Electrical Services" below. Primary color: dark navy blue (#181f6f), accent color: orange (#f1620f). Minimalist and modern. Transparent background.
+Clean professional company logo for "Alpha9 Electric" electrical services. Includes a bold lightning bolt icon, text "Alpha9 Electric" in strong modern sans-serif font, small tagline "Licensed Electrical Services" below. Primary color: dark navy blue (#181f6f), accent color: orange (#f1620f). Minimalist and modern. Transparent background.
 ```
 
 > **Note**: For the logo, Canva or Adobe Express will give better text results than AI image tools.
@@ -605,4 +605,4 @@ Clean professional company logo for "Alpha9Electric" electrical services. Includ
 - For technical images (panels, transformers), describe what you see in real photos
 
 ---
-*Alpha9Electric | 937 Gallaher Rd, Kingston TN | (865) 290-0218*
+*Alpha9 Electric | 937 Gallaher Rd, Kingston TN | (865) 290-0218*
