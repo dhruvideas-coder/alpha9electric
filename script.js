@@ -53,8 +53,8 @@ function initNavbar() {
   // Set active link based on current page
   const path = window.location.pathname;
   navLinks.forEach(link => {
-    if (link.getAttribute('href') === path.split('/').pop() || 
-        (path.endsWith('/') && link.getAttribute('href') === 'index.html')) {
+    if (link.getAttribute('href') === path.split('/').pop() ||
+      (path.endsWith('/') && link.getAttribute('href') === 'index.html')) {
       link.classList.add('active');
     }
   });
@@ -126,7 +126,7 @@ function initScrollAnimations() {
 function animateCounter(el, target, duration = 2000) {
   const start = performance.now();
   const isDecimal = target % 1 !== 0;
-  
+
   function update(timestamp) {
     const elapsed = timestamp - start;
     const progress = Math.min(elapsed / duration, 1);
@@ -283,11 +283,19 @@ function populateModal(data) {
 }
 
 /* =============================================
-   CONTACT FORM VALIDATION
+   CONTACT FORM VALIDATION & FORMATTING
    ============================================= */
 function initContactForm() {
   const form = document.getElementById('contact-form');
   if (!form) return;
+
+  const phoneInput = form.querySelector('#phone');
+  if (phoneInput) {
+    phoneInput.addEventListener('input', (e) => {
+      let x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
+      e.target.value = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
+    });
+  }
 
   const successMsg = document.getElementById('form-success');
 
@@ -301,11 +309,11 @@ function initContactForm() {
     });
 
     // Validate each field
-    const name    = form.querySelector('#name');
-    const email   = form.querySelector('#email');
-    const phone   = form.querySelector('#phone');
+    const name = form.querySelector('#name');
+    const email = form.querySelector('#email');
+    const phone = form.querySelector('#phone');
     const message = form.querySelector('#message');
-    const agree   = form.querySelector('#agree');
+    const agree = form.querySelector('#agree');
 
     if (!name?.value.trim() || name.value.trim().length < 2) {
       name?.classList.add('error'); valid = false;
@@ -313,7 +321,7 @@ function initContactForm() {
     if (!email?.value.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
       email?.classList.add('error'); valid = false;
     }
-    if (phone?.value && !/^[\d\s+\-().]{7,}$/.test(phone.value)) {
+    if (phone?.value && !/^\(\d{3}\) \d{3}-\d{4}$/.test(phone.value)) {
       phone?.classList.add('error'); valid = false;
     }
     if (!message?.value.trim() || message.value.trim().length < 10) {
